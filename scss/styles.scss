@@ -67,8 +67,11 @@ body {
 		margin-top: 14em;
 		height: 10vh;
 		.imagenWhatsapp {
+			position: fixed;
+			bottom:1%;
+			right: 1%;
 			width: 15%;
-			margin-left: 80%;
+			
 		}
 	}
 }

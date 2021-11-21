@@ -24,6 +24,9 @@ body {
 				a {
 					font-weight: 700;
 				}
+				a:hover {
+					color: rgb(110, 110, 110);
+				}
 			}
 		}
 		.navbar::before {
@@ -63,16 +66,109 @@ body {
 			margin-bottom: 9em;
 			font-size: 1.4rem;
 		}
+		.sobre-nosotros {
+			background: white;
+			width: 100vw;
+			margin-left: -1em;
+			text-align: left;
+			h2 {
+				font-size: 1.3rem;
+				width: 85%;
+				padding-top: 2em;
+				margin-left: 0.7em;
+				margin-bottom: 2em;
+				color: #d96804;
+			}
+			p {
+				width: 88%;
+				font-size: 0.9rem;
+				margin-left: 1.1em;
+				margin-bottom: 0.5em;
+			}
+			.nuestro-producto {
+				margin-bottom: 3em;
+			}
+			img {
+				width: 100vw;
+				margin-top: 2em;
+			}
+			a {
+				border-radius: 20px;
+				padding: 0.5em 2em 0.5em 2em;
+				box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+				background: #d96804;
+				text-decoration: none;
+				color: white;
+				font-family: "Crimson Text", serif;
+				font-size: 0.9rem;
+				font-weight: 300;
+				margin-left: 1.5em;
+			}
+			a:hover {
+				background: #e48b3d;
+			}
+		}
 	}
 	.footer {
-		background: white;
+		font-weight: 500;
+		opacity: 2;
+		color: white;
+		height: 25em;
+		padding-top: 2em;
+		text-align: center;
+		background-image: linear-gradient(
+			rgba(78, 78, 54, 1),
+			rgba(78, 78, 54, 0.66)
+		);
 		position: relative;
-		height: 10vh;
 		.imagenWhatsapp {
 			position: fixed;
 			bottom: 1%;
 			right: 1%;
 			width: 15%;
+		}
+		.nav-footer {
+			ul {
+				li {
+					padding-bottom: 1em;
+					a {
+						color: white;
+					}
+				}
+				margin-left: -2.8em;
+				list-style: none !important;
+			}
+		}
+		.icons-footer {
+			i {
+				font-size: 1.5em;
+			}
+			.fa-instagram {
+				color: white;
+			}
+			.fa-instagram:hover {
+				color: #e66465;
+			}
+			.fa-facebook-f {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-facebook-f:hover {
+				color: #1b73d5;
+			}
+			.fa-envelope {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-envelope:hover {
+				color: #e2ca5f;
+			}
+		}
+		.logo-footer {
+			margin-top: 2em;
+		}
+		.locacion {
+			margin-top: 2em;
 		}
 	}
 }

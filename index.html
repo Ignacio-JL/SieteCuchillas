@@ -74,20 +74,27 @@
         
     </div>
     <div class="reset">
-        <form action="" class="formulario">
-            <div>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+        <form action="" class="formulario needs-validation" novalidate>
+            <div class="divForm">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
+                
+                <div class="invalid-feedback">Completar</div>
             </div>
-            <div>
-                <input type="email" name="correo" id="correo" placeholder="Email">
+            <div class="divForm">
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Email" required>
+                <div class="invalid-feedback">Completar</div>
             </div>
-            <div>
-                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+            <div class="divForm">
+                <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" required>
+                
+                <div class="invalid-feedback">Completar</div>
             </div>
-            <div>
-                <textarea name="mensaje" id="mensaje" placeholder="Dejanos acá tu consulta"></textarea>   
+            <div class="divForm">
+                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
+                
+                <div class="invalid-feedback">Completar</div>
             </div>
-            <div class="formulario-button">
+            <div class="divForm formulario-button">
                 <button id="enviarForm">Enviar</button>
             </div>
             
@@ -131,6 +138,29 @@
     <p class="locacion">Argentina</p>
   </div>
 </div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
 <script src="./js/main.js"></script>
+
 </body>
 </html>

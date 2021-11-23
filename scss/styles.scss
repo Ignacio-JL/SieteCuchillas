@@ -137,11 +137,6 @@ body {
 				position: relative;
 				z-index: 2;
 				overflow: hidden;
-				// background-image: url("../assets/arbolContacto.png");
-				// background-repeat: no-repeat;
-				// background-size: cover;
-				// background-position: center;
-				// opacity: 0.3;
 				text-align: left;
 				img{
 					position: absolute;
@@ -218,6 +213,56 @@ body {
 					button:hover {
 						background: #e48b3d;
 					}
+			}
+		}
+		.productos{
+			.encabezado{
+				background: #F5F2EC;
+				
+				h2 { 
+					text-align: center;
+					font-size: 2rem;						
+					color: #d96804;
+					margin-bottom: 25px;
+					padding: 10%;
+					margin-bottom: 0;
+				}
+				
+			}
+			.headProductos{
+				position: relative;
+				z-index: 2;
+				overflow: hidden;
+				text-align: center;
+				img{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0.41;
+				}
+				
+				.presentacion{
+					position: relative;
+					z-index: 2;
+					padding: 8%;
+					
+					p {						
+						font-size: 0.9rem;
+						margin-bottom: 0.5em;
+						line-height: 19px;
+					}
+				}
+			}
+			.footerProductos{
+				background: #CABFA0;
+				button{
+					font-size: 1rem;
+					margin-top: 10%;
+					margin-bottom: 18%;
+				}
+				
 			}
 		}
 

@@ -164,6 +164,41 @@ body {
           margin-bottom: 100px; }
         body .main .contacto .formulario button:hover {
           background: #e48b3d; }
+    body .main .productos .encabezado {
+      background: #F5F2EC; }
+      body .main .productos .encabezado h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #d96804;
+        margin-bottom: 25px;
+        padding: 10%;
+        margin-bottom: 0; }
+    body .main .productos .headProductos {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      text-align: center; }
+      body .main .productos .headProductos img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.41; }
+      body .main .productos .headProductos .presentacion {
+        position: relative;
+        z-index: 2;
+        padding: 8%; }
+        body .main .productos .headProductos .presentacion p {
+          font-size: 0.9rem;
+          margin-bottom: 0.5em;
+          line-height: 19px; }
+    body .main .productos .footerProductos {
+      background: #CABFA0; }
+      body .main .productos .footerProductos button {
+        font-size: 1rem;
+        margin-top: 10%;
+        margin-bottom: 18%; }
   body .footer {
     font-weight: 500;
     opacity: 2;

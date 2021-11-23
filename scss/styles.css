@@ -5,6 +5,10 @@ body {
     text-align: left;
     margin: 0;
     padding: 0; }
+  body .fontCrim {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 600; }
   body button:focus {
     outline: none; }
   body .header {
@@ -94,17 +98,25 @@ body {
     body .main .contacto {
       background: white; }
       body .main .contacto .headContacto {
-        background-image: url("../assets/arbolContacto.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        opacity: 0.3;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
         text-align: left; }
+        body .main .contacto .headContacto img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.41; }
         body .main .contacto .headContacto .presentacion {
+          position: relative;
+          z-index: 2;
           padding: 71px 17px 30px 17px; }
           body .main .contacto .headContacto .presentacion h2 {
             font-size: 1.3rem;
-            color: #d96804; }
+            color: #d96804;
+            margin-bottom: 25px; }
           body .main .contacto .headContacto .presentacion p {
             font-size: 0.9rem;
             margin-bottom: 0.5em;

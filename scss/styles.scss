@@ -1,5 +1,5 @@
 body {
-	.reset{
+	.reset {
 		text-align: left;
 		margin: 0;
 		padding: 0;
@@ -9,9 +9,8 @@ body {
 		background: none;
 		border: none;
 	}
-	
-	.fontCrim{
-		font-family: 'Crimson Text';
+	.fontCrim {
+		font-family: "Crimson Text";
 		font-style: normal;
 		font-weight: 600;
 	}
@@ -126,14 +125,14 @@ body {
 				background: #e48b3d;
 			}
 		}
-		.contacto{
+		.contacto {
 			background: white;
-			.headContacto{
+			.headContacto {
 				position: relative;
 				z-index: 2;
 				overflow: hidden;
 				text-align: left;
-				img{
+				img {
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -141,27 +140,26 @@ body {
 					height: 100%;
 					opacity: 0.41;
 				}
-				
-				.presentacion{
+
+				.presentacion {
 					position: relative;
 					z-index: 2;
 					padding: 71px 17px 30px 17px;
 					h2 {
-						font-size: 1.3rem;						
+						font-size: 1.3rem;
 						color: #d96804;
 						margin-bottom: 25px;
 					}
-					p {						
+					p {
 						font-size: 0.9rem;
 						margin-bottom: 0.5em;
 						line-height: 22px;
 					}
 				}
-		
 			}
-			.formulario{
+			.formulario {
 				padding-top: 60px;
-				div.divForm{
+				div.divForm {
 					padding-left: 16px;
 					padding-right: 16px;
 					margin-top: 18px;
@@ -175,7 +173,7 @@ body {
 					width: 100%;
 					padding-left: 10px;
 				}
-				textarea{
+				textarea {
 					font-size: 0.9rem;
 					border: 1px solid rgba(0, 0, 0, 0.6);
 					box-sizing: border-box;
@@ -184,87 +182,85 @@ body {
 					width: 100%;
 					padding-left: 10px;
 				}
-				.formulario-button{
+				.formulario-button {
 					text-align: right;
 				}
-				button{
-						border-color: transparent;
-						border-radius: 20px;
-						padding: 0.5em 2em 0.5em 2em;
-						box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
-						background: #d96804;
-						text-decoration: none;
-						color: white;
-						font-family: "Crimson Text", serif;
-						font-size: 0.9rem;
-						font-weight: 300;
-						margin-left: 1.5em;
-						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-						padding-top: 4px;
-						width: 145px;
-						height: 33px;
-						margin-bottom: 100px;
-					}
-					button:hover {
-						background: #e48b3d;
-					}
+				button {
+					border-color: transparent;
+					border-radius: 20px;
+					padding: 0.5em 2em 0.5em 2em;
+					box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+					background: #d96804;
+					text-decoration: none;
+					color: white;
+					font-family: "Crimson Text", serif;
+					font-size: 0.9rem;
+					font-weight: 300;
+					margin-left: 1.5em;
+					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					padding-top: 4px;
+					width: 145px;
+					height: 33px;
+					margin-bottom: 100px;
+				}
+				button:hover {
+					background: #e48b3d;
+				}
 			}
 		}
-		.productos{
-			.encabezado{
-				background: #F5F2EC;
-				
-				h2 { 
+		.productos {
+			.encabezado {
+				background: #f5f2ec;
+
+				h2 {
 					text-align: center;
-					font-size: 2rem;						
+					font-size: 2rem;
 					color: #d96804;
 					margin-bottom: 25px;
 					padding: 10%;
 					margin-bottom: 0;
 				}
-				
 			}
-			.headProductos{
+
+			.headProductos {
+				background: rgb(255, 245, 230);
 				position: relative;
 				z-index: 2;
 				overflow: hidden;
 				text-align: center;
-				img{
+				img {
 					position: absolute;
 					top: 0;
 					left: 0;
 					width: 100%;
 					height: 100%;
-					opacity: 0.41;
+					opacity: 0.4;
 				}
-				
-				.presentacion{
+				.presentacion {
 					position: relative;
 					z-index: 2;
 					padding: 8%;
-					
-					p {						
+					p {
 						font-size: 0.9rem;
 						margin-bottom: 0.5em;
 						line-height: 19px;
+						font-weight: 600;
 					}
 				}
 			}
 			.mainProductos{
 				background: black;
-				
 			}
-			.footerProductos{
-				background: #CABFA0;
-				button{
+
+			.footerProductos {
+				background: #cabfa0;
+				button {
 					font-size: 1rem;
 					margin-top: 10%;
 					margin-bottom: 18%;
 				}
-				
 			}
 		}
-
 	}
 	.footer {
 		font-weight: 500;

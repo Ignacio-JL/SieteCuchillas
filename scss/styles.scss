@@ -4,6 +4,17 @@ body {
 		margin: 0;
 		padding: 0;
 	}
+	//Bootstrap
+	.carousel-control-next, .carousel-control-prev{
+		background: none;
+		border: none;
+	}
+	
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		// height: 2rem !important;
+		
+	}
+	
 	.fontCrim{
 		font-family: 'Crimson Text';
 		font-style: normal;
@@ -254,6 +265,10 @@ body {
 						line-height: 19px;
 					}
 				}
+			}
+			.mainProductos{
+				background: black;
+				
 			}
 			.footerProductos{
 				background: #CABFA0;

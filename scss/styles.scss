@@ -10,11 +10,6 @@ body {
 		border: none;
 	}
 	
-	.carousel-control-prev-icon, .carousel-control-next-icon{
-		// height: 2rem !important;
-		
-	}
-	
 	.fontCrim{
 		font-family: 'Crimson Text';
 		font-style: normal;
@@ -25,17 +20,6 @@ body {
 	button:focus {
 		outline: none;
 	}
-	//depues en todo caso modificar esta clase dentro del .main de index
-	//Actualmente to page Contacto
-	// .headContacto{
-	// 	background-color: white;
-	// 	background-image: url("../assets/arbolContacto.png");
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-		
-
-	// }
-	
 	.header {
 		height: 10vh;
 		.navbar {

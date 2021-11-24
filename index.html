@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kumbh+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kumbh+Sans:wght@300;400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2c1ce8387b.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -50,7 +50,6 @@
   </div>
 
 <div class="main">
-<div class="col-sm-12">
     <p class="h1 h1-scouts">Hecho por scouts, para scouts</p>
     <p class="h4 h4-mates">Mates y artesanías personalizadas</p>
     <button type="button" class="btn btn-light">Ver productos</button>
@@ -62,9 +61,74 @@
       <p class="nuestro-producto">Nuestro producto favorito son los <strong>mates</strong> porque nos encanta la idea de compartir tardes y mañanas, momentos, anécdotas y experiencias con amigos y familia.</p>   
       <a class="conocer-mas" href="">Conocer más</a> 
       <img class="mate-ruta" src="./assets/mateRuta.jpg" alt="">   
-   </div> 
+   </div>
+
+  <div class="productos">
+    <div class="encabezado">
+      <h2 class="fontCrim">Productos leales y útiles</h2>
+    </div>
+
+    
+      <div class="headProductos">
+        <img src="./assets/mesa-bosque.png">
+          <div class="presentacion">
+              <p>Nos especializamos en la confección de mates, azucareras, bombillas y demás artículos relacionados con el arte del mate.</p>
+              <p>También ofrecemos la posibilidad de un producto único e irrepetible, agregando dijes, colores y demás elementos personalizados.</p>
+          </div>
+      </div>
+    
+    
+    <div class="footerProductos">
+      <button type="button" class="btn btn-light">Ver productos</button>
+    </div>
+
+  </div>
+
+   <div class="contacto">
+    <div class="headContacto">
+      <img src="./assets/arbolContacto.png">
+        <div class="presentacion">
+            <h2 class="fontCrim">Contactanos</h2>
+            <p>Nos encantaría ayudarte a elegir tu producto ideal.</p>
+            <p>Dejanos tus datos y nos comunicaremos lo más pronto posible.</p>
+        </div>
+        
+    </div>
+    <div class="reset">
+        <form action="" class="formulario needs-validation" novalidate>
+            <div class="divForm">
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
+                
+                <div class="invalid-feedback">Completar</div>
+            </div>
+            <div class="divForm">
+                <input type="email" class="form-control" name="correo" id="correo" placeholder="Email" required>
+                <div class="invalid-feedback">Completar</div>
+            </div>
+            <div class="divForm">
+                <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" required>
+                
+                <div class="invalid-feedback">Completar</div>
+            </div>
+            <div class="divForm">
+                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
+                
+                <div class="invalid-feedback">Completar</div>
+            </div>
+            <div class="divForm formulario-button">
+                <button id="enviarForm">Enviar</button>
+            </div>
+            
+            
+        </form>
+    </div>
+    
 </div>
+
+
+
 </div>
+
 
 
 <div class="footer">
@@ -97,6 +161,29 @@
     <p class="locacion">Argentina</p>
   </div>
 </div>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+<script src="./js/main.js"></script>
 
 </body>
 </html>

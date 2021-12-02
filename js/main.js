@@ -18,5 +18,14 @@ document.getElementById('enviarForm').addEventListener('click', (e) =>{
 
 //FAQ
 document.getElementById('arrow1').addEventListener('click', () =>{
-    document.getElementById('faq1').style('visibility: hidden');
+    $('#faq1').toggle(200);
+});
+document.getElementById('arrow2').addEventListener('click', () =>{
+    $('#faq2').toggle(200);
+});
+document.getElementById('arrow3').addEventListener('click', () =>{
+    $('#faq3').toggle(200);
+});
+document.getElementById('arrow4').addEventListener('click', () =>{
+    $('#faq4').toggle(200);
 });

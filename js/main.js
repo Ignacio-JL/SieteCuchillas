@@ -1,3 +1,4 @@
+//Formulario
 document.getElementById('enviarForm').addEventListener('click', (e) =>{
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('correo').value;
@@ -13,4 +14,9 @@ document.getElementById('enviarForm').addEventListener('click', (e) =>{
         Mensaje%3A%20${mensaje}%0A`
     }
     
+});
+
+//FAQ
+document.getElementById('arrow1').addEventListener('click', () =>{
+    document.getElementById('faq1').style('visibility: hidden');
 });

@@ -17,15 +17,34 @@ document.getElementById('enviarForm').addEventListener('click', (e) =>{
 });
 
 //FAQ
-document.getElementById('arrow1').addEventListener('click', () =>{
+function changeArrow(btnIcon){
+    if(btnIcon.children().hasClass("fa-chevron-down")){
+        btnIcon.children().removeClass("fa-chevron-down");
+        btnIcon.children().addClass("fa-chevron-up");
+    }
+    else{
+        btnIcon.children().removeClass("fa-chevron-up");
+        btnIcon.children().addClass("fa-chevron-down");
+    }
+}
+
+
+$('#arrow1').on('click', function (){
     $('#faq1').toggle(200);
+    changeArrow($(this));
 });
-document.getElementById('arrow2').addEventListener('click', () =>{
+
+$('#arrow2').on('click', function (){
     $('#faq2').toggle(200);
+    changeArrow($(this));
 });
-document.getElementById('arrow3').addEventListener('click', () =>{
+
+$('#arrow3').on('click', function (){
     $('#faq3').toggle(200);
+    changeArrow($(this));
 });
-document.getElementById('arrow4').addEventListener('click', () =>{
+
+$('#arrow4').on('click', function (){
     $('#faq4').toggle(200);
+    changeArrow($(this));
 });

@@ -246,7 +246,7 @@ body {
           body .main .faq .faq--contenido .faq--contenido__question .question--arrow button {
             border: none;
             background-color: #FFFFFF; }
-            body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-down {
+            body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-down, body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-up {
               color: #D96804; }
     body .main .faq .faq--footer {
       background: white; }

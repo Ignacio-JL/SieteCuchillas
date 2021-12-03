@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"nombre": "Mate Calado",
+		"img": "./assets/Productos/MateHuevo.jpg"
+	},
+	{
+		"id": 2,
+		"nombre": "Mate Huevo",
+		"img": "./assets/Productos/MateScout.jpg"
+	},
+	{
+		"id": 3,
+		"nombre": "Mate Scout",
+		"img": "./assets/Productos/MateBocón.jpg"
+	},
+	{
+		"id": 4,
+		"nombre": "Mate Patria",
+		"img": "./assets/Productos/MatePatria.jpg"
+	},
+	{
+		"id": 5,
+		"nombre": "Mate Geo",
+		"img": "./assets/Productos/MateGeo.jpg"
+	},
+	{
+		"id": 6,
+		"nombre": "Mate Bocón",
+		"img": "./assets/Productos/MateCalado.jpg"
+	}
+]

@@ -5,7 +5,8 @@ body {
 		padding: 0;
 	}
 	//Bootstrap
-	.carousel-control-next, .carousel-control-prev{
+	.carousel-control-next,
+	.carousel-control-prev {
 		background: none;
 		border: none;
 	}
@@ -21,15 +22,22 @@ body {
 	}
 	.header {
 		height: 10vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		z-index: 999999;
+		padding-bottom: auto;
+
 		.navbar {
 			font-family: "Roboto", sans-serif;
 			z-index: 5;
 			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+			background: #a77e60 !important;
 			.navbar-brand {
 				color: black;
 				font-weight: 700;
 			}
-			background-color: rgba(223, 223, 223, 0.5) !important;
+
 			ul {
 				text-align: center;
 			}
@@ -37,6 +45,7 @@ body {
 				border: none;
 				color: white !important;
 			}
+
 			.nav-item {
 				a {
 					font-weight: 700;
@@ -45,17 +54,6 @@ body {
 					color: rgb(110, 110, 110);
 				}
 			}
-		}
-		.navbar::before {
-			opacity: 0.5;
-			z-index: -9999;
-			content: "";
-			position: absolute;
-			z-index: -9999;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
 		}
 	}
 	.main {
@@ -248,7 +246,7 @@ body {
 					}
 				}
 			}
-			.mainProductos{
+			.mainProductos {
 				background: black;
 			}
 
@@ -261,6 +259,69 @@ body {
 				}
 			}
 		}
+		.faq {
+			.faq--contenido {
+				background: #ffffff;
+				p {
+					display: none;
+					margin-bottom: 0;
+					margin-top: 1rem;
+					text-align: left;
+					padding-left: 16px;
+					font-size: 1rem;
+					font-family: "Roboto", sans-serif;
+					font-weight: 300;
+					line-height: 1.3rem;
+					width: 90%;
+				}
+				hr {
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+					border: 1px solid rgba(172, 172, 172, 0.8);
+				}
+				h2 {
+					text-align: left;
+					font-size: 2rem;
+					padding-left: 16px;
+					margin-bottom: 2rem;
+				}
+				.faq--contenido__question {
+					display: grid;
+					grid-template-columns: 80% 20%;
+					grid-template-rows: 1fr;
+					.question--title {
+						h3 {
+							font-family: "Roboto", sans-serif;
+							text-align: left;
+							font-weight: 400;
+							font-size: 1.1rem;
+							padding-left: 16px;
+							line-height: 1.8rem;
+						}
+					}
+					.question--arrow {
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: center;
+						button {
+							border: none;
+							background-color: #ffffff;
+							.fa-chevron-down,
+							.fa-chevron-up {
+								color: #d96804;
+							}
+						}
+					}
+				}
+			}
+			.faq--footer {
+				background: white;
+				img {
+					width: 100vw;
+					margin-top: 2em;
+				}
+			}
+		}
 	}
 	.footer {
 		font-weight: 500;
@@ -269,13 +330,16 @@ body {
 		height: 25em;
 		padding-top: 2em;
 		text-align: center;
-		background-image: linear-gradient(
-			rgba(78, 78, 54, 1),
-			rgba(78, 78, 54, 0.66)
+		background: linear-gradient(
+			180deg,
+			hsla(23, 61%, 30%, 1) 0%,
+			hsla(24, 22%, 51%, 1) 100%,
+			hsla(23, 61%, 30%, 1) 100%
 		);
 		position: relative;
 		.imagenWhatsapp {
 			position: fixed;
+			z-index: 99999;
 			bottom: 1%;
 			right: 3%;
 			width: 15%;

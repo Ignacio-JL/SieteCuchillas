@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   max-width: 100vw;
   overflow-x: hidden; }
@@ -6,24 +5,62 @@ body {
     text-align: left;
     margin: 0;
     padding: 0; }
-  body .carousel-control-next, body .carousel-control-prev {
+  body .carousel-control-next,
+  body .carousel-control-prev {
     background: none;
     border: none; }
+  body .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; }
   body .fontCrim {
-    font-family: "Crimson Text";
+    font-family: "Crimson Text", sans-serif;
     font-style: normal;
     font-weight: 600; }
   body button:focus {
     outline: none; }
+  body .mailOk {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    background: #7a7775;
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw; }
+    body .mailOk div img {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      opacity: .4; }
+    body .mailOk div .mailOk--mensaje {
+      padding-top: 43vh;
+      position: relative;
+      z-index: 9999; }
+      body .mailOk div .mailOk--mensaje h2 {
+        font-size: 50px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center; }
+      body .mailOk div .mailOk--mensaje p {
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.7px; }
   body .header {
-    height: 10vh; }
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    padding-bottom: auto; }
     body .header .navbar {
       font-family: "Roboto", sans-serif;
       z-index: 5;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-      background-color: rgba(223, 223, 223, 0.5) !important; }
+      background: black !important; }
       body .header .navbar .navbar-brand {
-        color: black;
+        color: white;
         font-weight: 700; }
       body .header .navbar ul {
         text-align: center; }
@@ -31,19 +68,10 @@ body {
         border: none;
         color: white !important; }
       body .header .navbar .nav-item a {
+        color: white !important;
         font-weight: 700; }
       body .header .navbar .nav-item a:hover {
         color: #6e6e6e; }
-    body .header .navbar::before {
-      opacity: 0.5;
-      z-index: -9999;
-      content: "";
-      position: absolute;
-      z-index: -9999;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
   body .main {
     text-align: center;
     margin-top: 10em;
@@ -116,7 +144,7 @@ body {
         body .main .contacto .headContacto .presentacion {
           position: relative;
           z-index: 2;
-          padding: 71px 17px 30px 17px; }
+          padding: 22% 5% 10% 5%; }
           body .main .contacto .headContacto .presentacion h2 {
             font-size: 1.3rem;
             color: #d96804;
@@ -125,6 +153,8 @@ body {
             font-size: 0.9rem;
             margin-bottom: 0.5em;
             line-height: 22px; }
+      body .main .contacto .formContainer .logoContacto {
+        display: none; }
       body .main .contacto .formulario {
         padding-top: 60px; }
         body .main .contacto .formulario div.divForm {
@@ -207,53 +237,79 @@ body {
         font-size: 1rem;
         margin-top: 10%;
         margin-bottom: 18%; }
-    body .main .faq .faq--contenido {
-      background: #FFFFFF; }
-      body .main .faq .faq--contenido p {
-        display: none;
-        margin-bottom: 0;
-        margin-top: 1rem;
-        text-align: left;
-        padding-left: 16px;
-        font-size: 1rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        line-height: 1.3rem;
-        width: 90%; }
-      body .main .faq .faq--contenido hr {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(172, 172, 172, 0.8); }
-      body .main .faq .faq--contenido h2 {
-        text-align: left;
-        font-size: 2rem;
-        padding-left: 16px;
-        margin-bottom: 2rem; }
-      body .main .faq .faq--contenido .faq--contenido__question {
-        display: grid;
-        grid-template-columns: 80% 20%;
-        grid-template-rows: 1fr; }
-        body .main .faq .faq--contenido .faq--contenido__question .question--title h3 {
-          font-family: "Roboto", sans-serif;
-          text-align: left;
-          font-weight: 400;
-          font-size: 1.1rem;
-          padding-left: 16px;
-          line-height: 1.8rem; }
-        body .main .faq .faq--contenido .faq--contenido__question .question--arrow {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: center; }
-          body .main .faq .faq--contenido .faq--contenido__question .question--arrow button {
-            border: none;
-            background-color: #FFFFFF; }
-            body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-down, body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-up {
-              color: #D96804; }
-    body .main .faq .faq--footer {
+    body .main .faq {
       background: white; }
-      body .main .faq .faq--footer img {
-        width: 100vw;
-        margin-top: 2em; }
+      body .main .faq .faq--contenido {
+        background: #ffffff; }
+        body .main .faq .faq--contenido p {
+          display: none;
+          margin-bottom: 0;
+          margin-top: 1rem;
+          text-align: left;
+          padding-left: 16px;
+          font-size: 1rem;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          line-height: 1.3rem;
+          width: 90%; }
+        body .main .faq .faq--contenido hr {
+          margin-top: 1.5rem;
+          margin-bottom: 1.5rem;
+          border: 1px solid rgba(172, 172, 172, 0.8); }
+        body .main .faq .faq--contenido h2 {
+          text-align: left;
+          font-size: 2rem;
+          padding-left: 16px;
+          margin-bottom: 2rem; }
+        body .main .faq .faq--contenido .faq--contenido__question {
+          display: grid;
+          grid-template-columns: 80% 20%;
+          grid-template-rows: 1fr; }
+          body .main .faq .faq--contenido .faq--contenido__question .question--title h3 {
+            font-family: "Roboto", sans-serif;
+            text-align: left;
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding-left: 16px;
+            line-height: 1.8rem; }
+          body .main .faq .faq--contenido .faq--contenido__question .question--arrow {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center; }
+            body .main .faq .faq--contenido .faq--contenido__question .question--arrow button {
+              border: none;
+              background-color: #ffffff; }
+              body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-down,
+              body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-up {
+                color: #d96804; }
+      body .main .faq .faq--footer {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        text-align: left;
+        margin-top: 25px; }
+        body .main .faq .faq--footer img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.77; }
+        body .main .faq .faq--footer div {
+          position: relative;
+          z-index: 2;
+          padding: 40% 0 5% 0; }
+          body .main .faq .faq--footer div p {
+            background-color: #000;
+            color: white;
+            opacity: 0.65;
+            padding: 6% 10% 6% 10%;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 8%; }
+            body .main .faq .faq--footer div p a {
+              color: #d96804;
+              text-decoration: none; }
   body .footer {
     font-weight: 500;
     opacity: 2;
@@ -261,10 +317,11 @@ body {
     height: 25em;
     padding-top: 2em;
     text-align: center;
-    background-image: linear-gradient(#4e4e36, rgba(78, 78, 54, 0.66));
+    background: linear-gradient(180deg, #7b421e 0%, #9e7d67 100%, #7b421e 100%);
     position: relative; }
     body .footer .imagenWhatsapp {
       position: fixed;
+      z-index: 99999;
       bottom: 1%;
       right: 3%;
       width: 15%; }
@@ -306,6 +363,37 @@ body::before {
   right: 0;
   background: url("../assets/image bosque.jpg") center center;
   opacity: 0.4; }
-=======
-body{max-width:100vw;overflow-x:hidden}body .reset{text-align:left;margin:0;padding:0}body .carousel-control-next,body .carousel-control-prev{background:none;border:none}body .fontCrim{font-family:"Crimson Text";font-style:normal;font-weight:600}body button:focus{outline:none}body .header{height:10vh;width:100vw;position:fixed;top:0;z-index:999999;padding-bottom:auto}body .header .navbar{font-family:"Roboto", sans-serif;z-index:5;-webkit-box-shadow:1px 1px 1px 1px rgba(0,0,0,0.2);box-shadow:1px 1px 1px 1px rgba(0,0,0,0.2);background:#a77e60 !important}body .header .navbar .navbar-brand{color:black;font-weight:700}body .header .navbar ul{text-align:center}body .header .navbar .navbar-toggler{border:none;color:white !important}body .header .navbar .nav-item a{font-weight:700}body .header .navbar .nav-item a:hover{color:#6e6e6e}body .main{text-align:center;margin-top:10em;width:100%}body .main .h1-scouts{padding:0.5em 0.2em 0.2em 0.1em;font-size:2.4rem;font-weight:700;font-family:"Roboto", sans-serif}body .main .h4-mates{font-size:1.4rem;padding:0em 0em 3em 0em;margin-left:0.5em;font-weight:600;width:90%;font-family:"Crimson Text", serif}body .main .btn-light{padding:0.3em 1.8em 0.3em 1.8em;border-radius:30px;-webkit-box-shadow:3px 3px 3px 2px rgba(0,0,0,0.2);box-shadow:3px 3px 3px 2px rgba(0,0,0,0.2);margin-bottom:9em;font-size:1.4rem}body .main .sobre-nosotros{background:white;text-align:left}body .main .sobre-nosotros h2{font-size:1.3rem;width:85%;padding-top:2em;margin-left:0.7em;margin-bottom:2em;color:#d96804}body .main .sobre-nosotros p{width:88%;font-size:0.9rem;margin-left:1.1em;margin-bottom:0.5em}body .main .sobre-nosotros .nuestro-producto{margin-bottom:3em}body .main .sobre-nosotros img{width:100vw;margin-top:2em}body .main .sobre-nosotros a{border-radius:20px;padding:0.5em 2em 0.5em 2em;-webkit-box-shadow:0px 2px 0px 1px rgba(0,0,0,0.2);box-shadow:0px 2px 0px 1px rgba(0,0,0,0.2);background:#d96804;text-decoration:none;color:white;font-family:"Crimson Text", serif;font-size:0.9rem;font-weight:300;margin-left:1.5em}body .main .sobre-nosotros a:hover{background:#e48b3d}body .main .contacto{background:white}body .main .contacto .headContacto{position:relative;z-index:2;overflow:hidden;text-align:left}body .main .contacto .headContacto img{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.41}body .main .contacto .headContacto .presentacion{position:relative;z-index:2;padding:71px 17px 30px 17px}body .main .contacto .headContacto .presentacion h2{font-size:1.3rem;color:#d96804;margin-bottom:25px}body .main .contacto .headContacto .presentacion p{font-size:0.9rem;margin-bottom:0.5em;line-height:22px}body .main .contacto .formulario{padding-top:60px}body .main .contacto .formulario div.divForm{padding-left:16px;padding-right:16px;margin-top:18px}body .main .contacto .formulario input{font-size:0.9rem;height:40px;border:1px solid rgba(0,0,0,0.6);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:10px;width:100%;padding-left:10px}body .main .contacto .formulario textarea{font-size:0.9rem;border:1px solid rgba(0,0,0,0.6);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:10px;height:200px;width:100%;padding-left:10px}body .main .contacto .formulario .formulario-button{text-align:right}body .main .contacto .formulario button{border-color:transparent;border-radius:20px;padding:0.5em 2em 0.5em 2em;-webkit-box-shadow:0px 2px 0px 1px rgba(0,0,0,0.2);box-shadow:0px 2px 0px 1px rgba(0,0,0,0.2);background:#d96804;text-decoration:none;color:white;font-family:"Crimson Text", serif;font-size:0.9rem;font-weight:300;margin-left:1.5em;-webkit-filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.25));padding-top:4px;width:145px;height:33px;margin-bottom:100px}body .main .contacto .formulario button:hover{background:#e48b3d}body .main .productos .encabezado{background:#f5f2ec}body .main .productos .encabezado h2{text-align:center;font-size:2rem;color:#d96804;margin-bottom:25px;padding:10%;margin-bottom:0}body .main .productos .headProductos{background:#fff5e6;position:relative;z-index:2;overflow:hidden;text-align:center}body .main .productos .headProductos img{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.4}body .main .productos .headProductos .presentacion{position:relative;z-index:2;padding:8%}body .main .productos .headProductos .presentacion p{font-size:0.9rem;margin-bottom:0.5em;line-height:19px;font-weight:600}body .main .productos .mainProductos{background:black}body .main .productos .footerProductos{background:#cabfa0}body .main .productos .footerProductos button{font-size:1rem;margin-top:10%;margin-bottom:18%}body .main .faq .faq--contenido{background:#ffffff}body .main .faq .faq--contenido p{display:none;margin-bottom:0;margin-top:1rem;text-align:left;padding-left:16px;font-size:1rem;font-family:"Roboto", sans-serif;font-weight:300;line-height:1.3rem;width:90%}body .main .faq .faq--contenido hr{margin-top:1.5rem;margin-bottom:1.5rem;border:1px solid rgba(172,172,172,0.8)}body .main .faq .faq--contenido h2{text-align:left;font-size:2rem;padding-left:16px;margin-bottom:2rem}body .main .faq .faq--contenido .faq--contenido__question{display:-ms-grid;display:grid;-ms-grid-columns:80% 20%;grid-template-columns:80% 20%;-ms-grid-rows:1fr;grid-template-rows:1fr}body .main .faq .faq--contenido .faq--contenido__question .question--title h3{font-family:"Roboto", sans-serif;text-align:left;font-weight:400;font-size:1.1rem;padding-left:16px;line-height:1.8rem}body .main .faq .faq--contenido .faq--contenido__question .question--arrow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}body .main .faq .faq--contenido .faq--contenido__question .question--arrow button{border:none;background-color:#ffffff}body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-down,body .main .faq .faq--contenido .faq--contenido__question .question--arrow button .fa-chevron-up{color:#d96804}body .main .faq .faq--footer{background:white}body .main .faq .faq--footer img{width:100vw;margin-top:2em}body .footer{font-weight:500;opacity:2;color:white;height:25em;padding-top:2em;text-align:center;background:-webkit-gradient(linear, left top, left bottom, from(#7b421e), color-stop(100%, #9e7d67), to(#7b421e));background:linear-gradient(180deg, #7b421e 0%, #9e7d67 100%, #7b421e 100%);position:relative}body .footer .imagenWhatsapp{position:fixed;z-index:99999;bottom:1%;right:3%;width:15%}body .footer .nav-footer ul{margin-left:-2.8em;list-style:none !important}body .footer .nav-footer ul li{padding-bottom:1em}body .footer .nav-footer ul li a{color:white}body .footer .icons-footer i{font-size:1.5em}body .footer .icons-footer .fa-instagram{color:white}body .footer .icons-footer .fa-instagram:hover{color:#e66465}body .footer .icons-footer .fa-facebook-f{color:white;margin-left:12%}body .footer .icons-footer .fa-facebook-f:hover{color:#1b73d5}body .footer .icons-footer .fa-envelope{color:white;margin-left:12%}body .footer .icons-footer .fa-envelope:hover{color:#e2ca5f}body .footer .logo-footer{margin-top:2em}body .footer .locacion{margin-top:2em}body::before{content:"";position:fixed;z-index:-9999;top:0;bottom:0;left:0;right:0;background:url("../assets/image bosque.jpg") center center;opacity:0.4}
->>>>>>> master
+
+@media (min-width: 1024px) {
+  body h2 {
+    font-size: 55px !important; }
+  body .main .contacto .headContacto .presentacion {
+    padding: 10% 5% 10% 5%; }
+    body .main .contacto .headContacto .presentacion h2 {
+      margin-bottom: 40px; }
+    body .main .contacto .headContacto .presentacion p {
+      font-size: 25px;
+      line-height: 30px; }
+  body .main .contacto .formContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 23px; }
+    body .main .contacto .formContainer .logoContacto {
+      width: 50%;
+      display: block;
+      text-align: center; }
+      body .main .contacto .formContainer .logoContacto img {
+        padding-top: 25px;
+        height: 560px;
+        opacity: 0.5; }
+    body .main .contacto .formContainer .formulario {
+      padding-top: 80px;
+      width: 48%; }
+      body .main .contacto .formContainer .formulario div.divForm {
+        font-size: 1rem;
+        padding-left: 0; }
+  body .main .faq .faq--footer div p {
+    font-size: 25px; }
+  body .footer .imagenWhatsapp {
+    width: 9%; } }

@@ -22,6 +22,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="mailOk">
+    <div>
+      <img src="./assets/mailOk.jpg" alt="email Enviado">
+      <div class="mailOk--mensaje">
+        <h2 class="fontCrim">¡Gracias por tu mensaje!</h2>
+        <p>Nos pondremos en contacto lo antes posible.</p>
+      </div>
+    </div>
+  </div>
     <div class="header">
       <nav class="navbar navbar-expand-xl navbar-light bg-light">
           <div class="container-fluid">
@@ -110,7 +119,7 @@
 
     <div class="contacto">
       <div class="headContacto">
-        <img src="./assets/arbolContacto.png">
+        <img src="./assets/arbolContacto.jpg">
           <div class="presentacion">
               <h2 class="fontCrim">Contactanos</h2>
               <p>Nos encantaría ayudarte a elegir tu producto ideal.</p>
@@ -118,24 +127,27 @@
           </div>
           
       </div>
-      <div class="reset">
-          <form action="" class="formulario needs-validation" novalidate>
+      <div class="formContainer reset">
+        <div class="logoContacto">
+          <img src="./assets/contactoFondo.png" alt="logoSieteCuchillas">
+        </div>
+          <form action="https://formspree.io/f/mqknkpzv" method="POST" class="formulario needs-validation" novalidate>
               <div class="divForm">
-                  <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre y apellido" required>
+                  <input type="text" class="form-control" name="Nombre" id="nombre" placeholder="Nombre y apellido" required>
                   
                   <div class="invalid-feedback">Completar</div>
               </div>
               <div class="divForm">
-                  <input type="email" class="form-control" name="correo" id="correo" placeholder="Email" required>
-                  <div class="invalid-feedback">Completar</div>
+                  <input type="email" class="form-control" name="Correo" id="correo" placeholder="Email" required>
+                  <div id="checkCorreo" class="invalid-feedback">Completar</div>
               </div>
               <div class="divForm">
-                  <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" required>
+                  <input type="tel" class="form-control" name="Telefono" id="telefono" placeholder="Teléfono" required>
                   
                   <div class="invalid-feedback">Completar</div>
               </div>
               <div class="divForm">
-                  <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
+                  <textarea class="form-control" name="Mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
                   
                   <div class="invalid-feedback">Completar</div>
               </div>
@@ -198,7 +210,8 @@
       
     </div>
     <div class="faq--footer">
-      <img src="./assets/faq.png" alt="fondobosque">
+      <img src="./assets/faq.jpg" alt="fondobosque">
+      <div class="fontCrim"><p>Si necesitas más información, no dudes en <a href="#">dejarnos tu consulta</a></p></div>
     </div>
 
   </div>

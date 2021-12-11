@@ -1,3 +1,11 @@
+//Scroll Contacto
+    $('#itemContacto').on('click',function(){
+        $('#navbarTogglerDemo2').removeClass('show');
+        $('html, body').animate({
+            scrollTop: $('#contacto').offset().top
+        }, 800);
+    });
+
 //Formulario
 //(Descartado) -- Borrar
 // document.getElementById('enviarForm').addEventListener('click', (e) =>{

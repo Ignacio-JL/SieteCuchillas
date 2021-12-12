@@ -1,30 +1,85 @@
 body {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 80px 80% 5%;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"header"
-		"main"
-		"footer";
-	.col-sm-12 {
-		padding-right: 0;
-		margin-right: 0;
+	.reset {
+		text-align: left;
+		margin: 0;
+		padding: 0;
 	}
+	//Bootstrap
+	.carousel-control-next,
+	.carousel-control-prev {
+		background: none;
+		border: none;
+	}
+	.navbar-light .navbar-toggler-icon {
+		//cambiar stroke='rgba'
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+	}
+
+	.fontCrim {
+		font-family: "Crimson Text", sans-serif;
+		font-style: normal;
+		font-weight: 600;
+	}
+	max-width: 100vw;
+	overflow-x: hidden;
 	button:focus {
 		outline: none;
 	}
+	.mailOk {
+		display: none;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		background: rgb(122, 119, 117);
+		z-index: 9999;
+		height: 100vh;
+		width: 100vw;
+		div {
+			img {
+				position: absolute;
+				height: 100vh;
+				width: 100vw;
+				opacity: 0.4;
+			}
+			.mailOk--mensaje {
+				padding-top: 43vh;
+				position: relative;
+				z-index: 9999;
+				h2 {
+					font-size: 50px;
+					font-weight: 400;
+					color: #fff;
+					text-align: center;
+				}
+				p {
+					font-family: "Roboto", sans-serif;
+					font-size: 20px;
+					font-weight: 300;
+					color: #fff;
+					text-align: center;
+					letter-spacing: 0.7px;
+				}
+			}
+		}
+	}
 	.header {
-		grid-area: header;
+		height: 10vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		z-index: 999999;
+		padding-bottom: auto;
+
 		.navbar {
+			font-family: "Roboto", sans-serif;
 			z-index: 5;
 			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+			background: black !important;
 			.navbar-brand {
-				color: black;
+				color: white;
 				font-weight: 700;
 			}
-			background-color: rgba(223, 223, 223, 0.5) !important;
+
 			ul {
 				text-align: center;
 			}
@@ -32,56 +87,378 @@ body {
 				border: none;
 				color: white !important;
 			}
+
 			.nav-item {
 				a {
+					color: white !important;
 					font-weight: 700;
 				}
+				a:hover {
+					color: rgb(110, 110, 110);
+				}
 			}
-		}
-		.navbar::before {
-			opacity: 0.5;
-			z-index: -9999;
-			content: "";
-			position: absolute;
-			z-index: -9999;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
 		}
 	}
 	.main {
 		text-align: center;
 		margin-top: 10em;
-		grid-area: main;
+		width: 100%;
 		.h1-scouts {
 			padding: 0.5em 0.2em 0.2em 0.1em;
-			margin-right: 0;
-			font-size: 2.1rem;
+			font-size: 2.4rem;
 			font-weight: 700;
+			font-family: "Roboto", sans-serif;
 		}
 		.h4-mates {
-			font-size: 1rem;
-			padding: 0em 0em 5em 0em;
-			font-weight: 700;
-			width: 100%;
+			font-size: 1.4rem;
+			padding: 0em 0em 3em 0em;
+			margin-left: 0.5em;
+			font-weight: 600;
+			width: 90%;
+			font-family: "Crimson Text", serif;
 		}
 		.btn-light {
-			padding: 0.4em 1.5em 0.4em 1.5em;
+			padding: 0.3em 1.8em 0.3em 1.8em;
 			border-radius: 30px;
 			box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 			margin-bottom: 9em;
+			font-size: 1.4rem;
+		}
+		.sobre-nosotros {
+			background: white;
+			// width: 100.2vw;
+			// margin-left: -1em;
+			text-align: left;
+			h2 {
+				font-size: 1.3rem;
+				width: 85%;
+				padding-top: 2em;
+				margin-left: 0.7em;
+				margin-bottom: 2em;
+				color: #d96804;
+			}
+			p {
+				width: 88%;
+				font-size: 0.9rem;
+				margin-left: 1.1em;
+				margin-bottom: 0.5em;
+			}
+			.nuestro-producto {
+				margin-bottom: 3em;
+			}
+			img {
+				width: 100vw;
+				margin-top: 2em;
+			}
+			a {
+				border-radius: 20px;
+				padding: 0.5em 2em 0.5em 2em;
+				box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+				background: #d96804;
+				text-decoration: none;
+				color: white;
+				font-family: "Crimson Text", serif;
+				font-size: 0.9rem;
+				font-weight: 300;
+				margin-left: 1.5em;
+			}
+			a:hover {
+				background: #e48b3d;
+			}
+		}
+		.contacto {
+			background: white;
+			.headContacto {
+				position: relative;
+				z-index: 2;
+				overflow: hidden;
+				text-align: left;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0.41;
+				}
+
+				.presentacion {
+					position: relative;
+					z-index: 2;
+					padding: 22% 5% 10% 5%;
+					h2 {
+						font-size: 1.3rem;
+						color: #d96804;
+						margin-bottom: 25px;
+					}
+					p {
+						font-size: 0.9rem;
+						margin-bottom: 0.5em;
+						line-height: 22px;
+					}
+				}
+			}
+			.formContainer .logoContacto {
+				display: none;
+			}
+			.formulario {
+				padding-top: 60px;
+				div.divForm {
+					padding-left: 16px;
+					padding-right: 16px;
+					margin-top: 18px;
+				}
+				input {
+					font-size: 0.9rem;
+					height: 40px;
+					border: 1px solid rgba(0, 0, 0, 0.6);
+					box-sizing: border-box;
+					border-radius: 10px;
+					width: 100%;
+					padding-left: 10px;
+				}
+				textarea {
+					font-size: 0.9rem;
+					border: 1px solid rgba(0, 0, 0, 0.6);
+					box-sizing: border-box;
+					border-radius: 10px;
+					height: 200px;
+					width: 100%;
+					padding-left: 10px;
+				}
+				.formulario-button {
+					text-align: right;
+				}
+				button {
+					border-color: transparent;
+					border-radius: 20px;
+					padding: 0.5em 2em 0.5em 2em;
+					box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+					background: #d96804;
+					text-decoration: none;
+					color: white;
+					font-family: "Crimson Text", serif;
+					font-size: 0.9rem;
+					font-weight: 300;
+					margin-left: 1.5em;
+					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					padding-top: 4px;
+					width: 145px;
+					height: 33px;
+					margin-bottom: 100px;
+				}
+				button:hover {
+					background: #e48b3d;
+				}
+			}
+		}
+		.productos {
+			.encabezado {
+				background: #f5f2ec;
+
+				h2 {
+					text-align: center;
+					font-size: 2rem;
+					color: #d96804;
+					margin-bottom: 25px;
+					padding: 10%;
+					margin-bottom: 0;
+				}
+			}
+
+			.headProductos {
+				background: rgb(255, 245, 230);
+				position: relative;
+				z-index: 2;
+				overflow: hidden;
+				text-align: center;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0.4;
+				}
+				.presentacion {
+					position: relative;
+					z-index: 2;
+					padding: 8%;
+					p {
+						font-size: 0.9rem;
+						margin-bottom: 0.5em;
+						line-height: 19px;
+						font-weight: 600;
+					}
+				}
+			}
+			.mainProductos {
+				background: black;
+			}
+
+			.footerProductos {
+				background: #cabfa0;
+				button {
+					font-size: 1rem;
+					margin-top: 10%;
+					margin-bottom: 18%;
+				}
+			}
+		}
+		.faq {
+			background: white;
+			.faq--contenido {
+				background: #ffffff;
+				p {
+					display: none;
+					margin-bottom: 0;
+					margin-top: 1rem;
+					text-align: left;
+					padding-left: 16px;
+					font-size: 1rem;
+					font-family: "Roboto", sans-serif;
+					font-weight: 300;
+					line-height: 1.3rem;
+					width: 90%;
+				}
+				hr {
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+					border: 1px solid rgba(172, 172, 172, 0.8);
+				}
+				h2 {
+					text-align: left;
+					font-size: 2rem;
+					padding-left: 16px;
+					margin-bottom: 2rem;
+				}
+				.faq--contenido__question {
+					display: grid;
+					grid-template-columns: 80% 20%;
+					grid-template-rows: 1fr;
+					.question--title {
+						h3 {
+							font-family: "Roboto", sans-serif;
+							text-align: left;
+							font-weight: 400;
+							font-size: 1.1rem;
+							padding-left: 16px;
+							line-height: 1.8rem;
+						}
+					}
+					.question--arrow {
+						display: flex;
+						flex-flow: row wrap;
+						justify-content: center;
+						button {
+							border: none;
+							background-color: #ffffff;
+							.fa-chevron-down,
+							.fa-chevron-up {
+								color: #d96804;
+							}
+						}
+					}
+				}
+			}
+			.faq--footer {
+				position: relative;
+				z-index: 2;
+				overflow: hidden;
+				text-align: left;
+				margin-top: 25px;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0.77;
+				}
+				div {
+					position: relative;
+					z-index: 2;
+					padding: 40% 0 5% 0;
+					p {
+						background-color: #000;
+						color: white;
+						opacity: 0.65;
+						padding: 6% 10% 6% 10%;
+						font-weight: 300;
+						text-align: center;
+						margin-bottom: 8%;
+						a {
+							color: #d96804;
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 	.footer {
-		background: white;
-		grid-area: footer;
+		font-weight: 500;
+		opacity: 2;
+		color: white;
+		height: 25em;
+		padding-top: 2em;
+		text-align: center;
+		background: linear-gradient(
+			180deg,
+			hsla(23, 61%, 30%, 1) 0%,
+			hsla(24, 22%, 51%, 1) 100%,
+			hsla(23, 61%, 30%, 1) 100%
+		);
 		position: relative;
-		height: 20vh;
 		.imagenWhatsapp {
+			position: fixed;
+			z-index: 99999;
+			bottom: 1%;
+			right: 3%;
 			width: 15%;
-			margin-left: 75%;
-			margin-top: 1em;
+		}
+		.nav-footer {
+			ul {
+				li {
+					padding-bottom: 1em;
+					a {
+						color: white;
+					}
+				}
+				margin-left: -2.8em;
+				list-style: none !important;
+			}
+		}
+		.icons-footer {
+			i {
+				font-size: 1.5em;
+			}
+			.fa-instagram {
+				color: white;
+			}
+			.fa-instagram:hover {
+				color: #e66465;
+			}
+			.fa-facebook-f {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-facebook-f:hover {
+				color: #1b73d5;
+			}
+			.fa-envelope {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-envelope:hover {
+				color: #e2ca5f;
+			}
+		}
+		.logo-footer {
+			margin-top: 2em;
+		}
+		.locacion {
+			margin-top: 2em;
 		}
 	}
 }
@@ -94,7 +471,68 @@ body::before {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url(https://www.instantworldbooking.com/directory/Slovenia/img/forestcampingmozirje_lokeprimozirju_005.forest.camping.mozirje.2736x182421.jpg)
-		center center;
-	opacity: 0.6;
+	background: url("../assets/image\ bosque.jpg") center center;
+	opacity: 0.4;
+}
+
+@media (min-width: 1024px) {
+	body {
+		h2 {
+			font-size: 55px !important;
+		}
+		.main {
+			.contacto {
+				.headContacto {
+					.presentacion {
+						padding: 10% 5% 10% 5%;
+						h2 {
+							margin-bottom: 40px;
+						}
+						p {
+							font-size: 25px;
+							line-height: 30px;
+						}
+					}
+				}
+				.formContainer {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: flex-start;
+					margin-top: 23px;
+					.logoContacto {
+						width: 50%;
+						display: block;
+						text-align: center;
+						img {
+							padding-top: 25px;
+							height: 560px;
+							opacity: 0.5;
+						}
+					}
+					.formulario {
+						padding-top: 80px;
+						width: 48%;
+						div.divForm {
+							font-size: 1rem;
+							padding-left: 0;
+						}
+					}
+				}
+			}
+			.faq {
+				.faq--footer {
+					div {
+						p {
+							font-size: 25px;
+						}
+					}
+				}
+			}
+		}
+		.footer {
+			.imagenWhatsapp {
+				width: 9%;
+			}
+		}
+	}
 }

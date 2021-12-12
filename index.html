@@ -4,54 +4,293 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="./scss/eventos.css">
     <title>Siete Cuchillas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kumbh+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2c1ce8387b.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
 <body>
-        <div class="row header ">
-            <div class="col-sm-12">
-                <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Siete Cuchillas</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
-                        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Productos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
+  <div class="mailOk">
+    <div>
+      <img src="./assets/mailOk.jpg" alt="email Enviado">
+      <div class="mailOk--mensaje">
+        <h2 class="fontCrim">¡Gracias por tu mensaje!</h2>
+        <p>Nos pondremos en contacto lo antes posible.</p>
+      </div>
+    </div>
+  </div>
+    <div class="header">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Siete Cuchillas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="navProductosClick">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+
+<div class="contenidoPrincipal" id="contenidoPrincipalID">
+  <div class="main">
+      <p class="h1 h1-scouts">Hecho por scouts, para scouts</p>
+      <p class="h4 h4-mates">Mates y artesanías personalizadas</p>
+      <button type="button" class="btn btn-light" id="btnProductosMain">Ver productos</button>
+
+    <div class="sobre-nosotros">
+        <h2 class="sobre-nosotros-titulo">Somos Siete Cuchillas</h2>
+        <p>Siete Cuchillas es un emprendimiento que recién está comenzando, hecho por scouts para scouts.</p>
+        <p>Vas a encontrar personas que entiendan y compartan tu pasión por el escultismo. Es por eso que vas a encontrar productos que reflejen tu espíritu. </p>
+        <p class="nuestro-producto">Nuestro producto favorito son los <strong>mates</strong> porque nos encanta la idea de compartir tardes y mañanas, momentos, anécdotas y experiencias con amigos y familia.</p>   
+        <a class="conocer-mas" href="">Conocer más</a> 
+        <img class="mate-ruta" src="./assets/mateRuta.jpg" alt="">   
+    </div>
+
+    <div class="productos">
+      <div class="encabezado">
+        <h2 class="fontCrim">Productos leales y útiles</h2>
+      </div>
+
+      
+        <div class="headProductos">
+          <img src="./assets/mesa-bosque.png">
+            <div class="presentacion">
+                <p>Nos especializamos en la confección de mates, azucareras, bombillas y demás artículos relacionados con el arte del mate.</p>
+                <p>También ofrecemos la posibilidad de un producto único e irrepetible, agregando dijes, colores y demás elementos personalizados.</p>
             </div>
         </div>
-        <div class="row main">
-            <div class="col-sm-12">
-                <p class="h1 h1-scouts">Hecho por scouts, para scouts</p>
-                <p class="h4 h4-mates">Mates y artesanías personalizadas</p>
-                <button type="button" class="btn btn-light">Ver productos</button>
+
+        <div class="mainProductos">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/Imagen1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/Imagen3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/Imagen2.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon edit" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon edit" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
-        <div class="row footer">
-            <div class="col-sm-12">
-                <img src="./assets/Whatsapp-Logo-PNG.png" class="img-fluid imagenWhatsapp" alt="img-fluid">
-            </div>
+      
+      
+      <div class="footerProductos">
+        <button type="button" class="btn btn-light" >Ver productos</button>
+      </div>
+
+    </div>
+
+    <div class="contacto">
+      <div class="headContacto">
+        <img src="./assets/arbolContacto.jpg">
+          <div class="presentacion">
+              <h2 class="fontCrim">Contactanos</h2>
+              <p>Nos encantaría ayudarte a elegir tu producto ideal.</p>
+              <p>Dejanos tus datos y nos comunicaremos lo más pronto posible.</p>
+          </div>
+          
+      </div>
+      <div class="formContainer reset">
+        <div class="logoContacto">
+          <img src="./assets/contactoFondo.png" alt="logoSieteCuchillas">
         </div>
+          <form action="https://formspree.io/f/mqknkpzv" method="POST" class="formulario needs-validation" novalidate>
+              <div class="divForm">
+                  <input type="text" class="form-control" name="Nombre" id="nombre" placeholder="Nombre y apellido" required>
+                  
+                  <div class="invalid-feedback">Completar</div>
+              </div>
+              <div class="divForm">
+                  <input type="email" class="form-control" name="Correo" id="correo" placeholder="Email" required>
+                  <div id="checkCorreo" class="invalid-feedback">Completar</div>
+              </div>
+              <div class="divForm">
+                  <input type="tel" class="form-control" name="Telefono" id="telefono" placeholder="Teléfono" required>
+                  
+                  <div class="invalid-feedback">Completar</div>
+              </div>
+              <div class="divForm">
+                  <textarea class="form-control" name="Mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
+                  
+                  <div class="invalid-feedback">Completar</div>
+              </div>
+              <div class="divForm formulario-button">
+                  <button id="enviarForm">Enviar</button>
+              </div>
+              
+              
+          </form>
+      </div>
+      
+  </div>
+
+  <div class="faq">
+    <div class="faq--contenido">
+      <h2 class="fontCrim">Preguntas Frecuentes</h2>
+      <div class="faq--contenido__question">
+        <div class="question--title">
+          <h3 class="reset">¿Puedo pedir un cambio o devolución del producto?</h3>
+        </div>
+        <div class="question--arrow">
+          <button id="arrow1"><i class="fas fa-chevron-down"></i></button>
+          <!-- <i class="fas fa-chevron-up"></i> -->
+        </div> 
+      </div>
+      <p id="faq1">Puedes solicitar un cambio hasta 15 días luego de realizada la compra. En caso de que el cambio se realice por un producto con un precio menor, podrá usar el crédito a favor para elegir otro producto y abonar la diferencia; así mismo si el producto es de un precio mayor deberá abonar la diferencia.</p>
+      <hr>
+
+      <div class="faq--contenido__question">
+        <div class="question--title">
+          <h3 class="reset">¿Cómo realizo una compra y cuáles son las formas de pago? </h3>
+        </div>
+        <div class="question--arrow">
+          <button id="arrow2"><i class="fas fa-chevron-down"></i></button>
+        </div> 
+      </div>
+      <p id="faq2">Para iniciar la compra, debes seleccionar el producto deseado y luego apretar el botón “¡Lo quiero!”. Esto te llevará automáticamente a un chat de WhatsApp con nosotros para concretar la compra y aclarar tus dudas. Puedes compra los productos por Mercadopago, efectivo o transferencia bancaria.</p>
+      <hr>
+
+      <div class="faq--contenido__question">
+        <div class="question--title">
+          <h3 class="reset">¿Realizan envíos a todo el país? ¿Cuál es el costo del envío?</h3>
+        </div>
+        <div class="question--arrow">
+          <button id="arrow3"><i class="fas fa-chevron-down"></i></button>
+        </div> 
+      </div>
+      <p id="faq3">Realizamos envíos a todo el país y el costo dependerá de dónde te encuentres. Trabajamos con diferentes empresas de envíos, con lo cual te informaremos las diferentes posibilidades y costos antes de que concretes tu compra.</p>
+      <hr>
+
+      <div class="faq--contenido__question">
+        <div class="question--title">
+          <h3 class="reset">¿Cuando voy a recibir mi pedido?</h3>
+        </div>
+        <div class="question--arrow">
+          <button id="arrow4"><i class="fas fa-chevron-down"></i></button>
+        </div> 
+      </div>
+      <p id="faq4">Los plazos de entrega dependen de diferentes factores. Los producto personalizados suelen tardar un poco más que el resto de los productos. También dependerá de dónde te encuentres. De todas maneras, antes de concretar la compra te brindaremos diferentes fechas tentativas para poder coordinar la entrega.</p>
+      
+    </div>
+    <div class="faq--footer">
+      <img src="./assets/faq.jpg" alt="fondobosque">
+      <div class="fontCrim"><p>Si necesitas más información, no dudes en <a href="#">dejarnos tu consulta</a></p></div>
+    </div>
+
+  </div>
+
+
+
+  </div>
+</div>
+
+<div class="nuestrosProductos">
+  <h1>Nuestros Productos</h1>
+  <p>Elegimos cuidadosamente nuestros productos, artesanos, diseñamos y te hacemos llegar lo mejor del trabajo artesanal poniendo mucho amor en cada detalle</p>
+  <p>Seleccionamos los mejores materiales y cuidamos mucho las terminaciones de cada producto, además de un minucioso control de calidad.</p>
+</div>
+
+<div class="productos" id="contenedorProductos" >
+
+</div>
+
+
+<!--Acá termina el main, lo puse así para ocultar el contenido al hacer click en la sección de productos-->
+
+
+
+  <div class="footer">
+    <img src="./assets/Whatsapp-Logo-PNG.png" class="img-fluid imagenWhatsapp" alt="img-fluid">
+
+    <div class="col-sm-12">
+      <div class="nav-footer">
+        <ul>
+          <li>
+            <a href="">Sobre nosotros</a>
+          </li>
+          <li>
+            <a href="#" id="footerProductosClick">Productos</a>
+          </li>
+          <li>
+            <a href="">Preguntas Frecuentes</a>
+          </li>
+          <li>
+            <a href="" >Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons-footer">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+      <!-- Acá iría el logo -->
+      <p class="logo-footer">Siete Cuchillas(logo)</p>
+      <p class="locacion">Argentina</p>
+    </div>
+  </div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/main.js"></script>
+
 </body>
 </html>

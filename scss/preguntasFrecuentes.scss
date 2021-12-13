@@ -1,0 +1,204 @@
+body {
+	margin: 0;
+	max-width: 100vw;
+	overflow-x: hidden;
+	button:focus {
+		outline: none;
+	}
+	.navbar-light .navbar-toggler-icon {
+		//cambiar stroke='rgba'
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+	}
+	.header {
+		height: 10vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		z-index: 999999;
+		padding-bottom: auto;
+		.navbar {
+			font-family: "Roboto", sans-serif;
+			z-index: 5;
+			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+			background: black !important;
+			.navbar-brand {
+				color: white;
+				font-weight: 700;
+			}
+
+			ul {
+				text-align: center;
+			}
+			.navbar-toggler {
+				border: none;
+				color: white !important;
+			}
+
+			.nav-item {
+				a {
+					color: white !important;
+					font-weight: 700;
+				}
+				a:hover {
+					color: rgb(110, 110, 110);
+				}
+			}
+		}
+	}
+	.faq {
+		padding-top: 5em;
+		background: white;
+		.faq--contenido {
+			background: #ffffff;
+			p {
+				display: none;
+				margin-bottom: 0;
+				margin-top: 1rem;
+				text-align: left;
+				padding-left: 16px;
+				font-size: 1rem;
+				font-family: "Roboto", sans-serif;
+				font-weight: 300;
+				line-height: 1.3rem;
+				width: 90%;
+			}
+			hr {
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+				border: 1px solid rgba(172, 172, 172, 0.8);
+			}
+			h2 {
+				text-align: left;
+				font-size: 2rem;
+				padding-left: 16px;
+				margin-bottom: 2rem;
+			}
+			.faq--contenido__question {
+				display: grid;
+				grid-template-columns: 80% 20%;
+				grid-template-rows: 1fr;
+				.question--title {
+					h3 {
+						font-family: "Roboto", sans-serif;
+						text-align: left;
+						font-weight: 400;
+						font-size: 1.1rem;
+						padding-left: 16px;
+						line-height: 1.8rem;
+					}
+				}
+				.question--arrow {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: center;
+					button {
+						border: none;
+						background-color: #ffffff;
+						.fa-chevron-down,
+						.fa-chevron-up {
+							color: #d96804;
+						}
+					}
+				}
+			}
+		}
+		.faq--footer {
+			position: relative;
+			z-index: 2;
+			overflow: hidden;
+			text-align: left;
+			margin-top: 25px;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0.77;
+			}
+			div {
+				position: relative;
+				z-index: 2;
+				padding: 40% 0 5% 0;
+				p {
+					background-color: #000;
+					color: white;
+					opacity: 0.65;
+					padding: 6% 10% 6% 10%;
+					font-weight: 300;
+					text-align: center;
+					margin-bottom: 8%;
+					a {
+						color: #d96804;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		font-weight: 500;
+		opacity: 2;
+		color: white;
+		height: 25em;
+		padding-top: 2em;
+		text-align: center;
+		background: linear-gradient(
+			180deg,
+			hsla(23, 61%, 30%, 1) 0%,
+			hsla(24, 22%, 51%, 1) 100%,
+			hsla(23, 61%, 30%, 1) 100%
+		);
+		position: relative;
+		.imagenWhatsapp {
+			position: fixed;
+			z-index: 99999;
+			bottom: 1%;
+			right: 3%;
+			width: 15%;
+		}
+		.nav-footer {
+			ul {
+				li {
+					padding-bottom: 1em;
+					a {
+						color: white;
+					}
+				}
+				margin-left: -2.8em;
+				list-style: none !important;
+			}
+		}
+		.icons-footer {
+			i {
+				font-size: 1.5em;
+			}
+			.fa-instagram {
+				color: white;
+			}
+			.fa-instagram:hover {
+				color: #e66465;
+			}
+			.fa-facebook-f {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-facebook-f:hover {
+				color: #1b73d5;
+			}
+			.fa-envelope {
+				color: white;
+				margin-left: 12%;
+			}
+			.fa-envelope:hover {
+				color: #e2ca5f;
+			}
+		}
+		.logo-footer {
+			margin-top: 2em;
+		}
+		.locacion {
+			margin-top: 2em;
+		}
+	}
+}

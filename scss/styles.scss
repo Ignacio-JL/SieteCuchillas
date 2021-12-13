@@ -252,7 +252,7 @@ body {
 				}
 			}
 		}
-		.productos {
+		.productosCarousel {
 			.encabezado {
 				background: #f5f2ec;
 
@@ -302,96 +302,6 @@ body {
 					font-size: 1rem;
 					margin-top: 10%;
 					margin-bottom: 18%;
-				}
-			}
-		}
-		.faq {
-			background: white;
-			.faq--contenido {
-				background: #ffffff;
-				p {
-					display: none;
-					margin-bottom: 0;
-					margin-top: 1rem;
-					text-align: left;
-					padding-left: 16px;
-					font-size: 1rem;
-					font-family: "Roboto", sans-serif;
-					font-weight: 300;
-					line-height: 1.3rem;
-					width: 90%;
-				}
-				hr {
-					margin-top: 1.5rem;
-					margin-bottom: 1.5rem;
-					border: 1px solid rgba(172, 172, 172, 0.8);
-				}
-				h2 {
-					text-align: left;
-					font-size: 2rem;
-					padding-left: 16px;
-					margin-bottom: 2rem;
-				}
-				.faq--contenido__question {
-					display: grid;
-					grid-template-columns: 80% 20%;
-					grid-template-rows: 1fr;
-					.question--title {
-						h3 {
-							font-family: "Roboto", sans-serif;
-							text-align: left;
-							font-weight: 400;
-							font-size: 1.1rem;
-							padding-left: 16px;
-							line-height: 1.8rem;
-						}
-					}
-					.question--arrow {
-						display: flex;
-						flex-flow: row wrap;
-						justify-content: center;
-						button {
-							border: none;
-							background-color: #ffffff;
-							.fa-chevron-down,
-							.fa-chevron-up {
-								color: #d96804;
-							}
-						}
-					}
-				}
-			}
-			.faq--footer {
-				position: relative;
-				z-index: 2;
-				overflow: hidden;
-				text-align: left;
-				margin-top: 25px;
-				img {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					opacity: 0.77;
-				}
-				div {
-					position: relative;
-					z-index: 2;
-					padding: 40% 0 5% 0;
-					p {
-						background-color: #000;
-						color: white;
-						opacity: 0.65;
-						padding: 6% 10% 6% 10%;
-						font-weight: 300;
-						text-align: center;
-						margin-bottom: 8%;
-						a {
-							color: #d96804;
-							text-decoration: none;
-						}
-					}
 				}
 			}
 		}

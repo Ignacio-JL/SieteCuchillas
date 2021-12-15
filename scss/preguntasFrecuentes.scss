@@ -202,3 +202,11 @@ body {
 		}
 	}
 }
+
+@media screen and (min-width: 1440px) {
+	body {
+		.fontCrim p {
+			font-size: 2rem;
+		}
+	}
+}

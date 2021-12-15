@@ -1,0 +1,157 @@
+.main {
+	font-family: "Roboto", sans-serif;
+	.mainSobreNosotros {
+		margin-top: 5em;
+		padding: 0 1em 1em 1em;
+		h1 {
+			font-size: 1.7rem;
+			color: #d96804;
+			margin-bottom: 1em;
+			font-family: "Crimson Text", serif;
+			font-weight: 600;
+		}
+		p {
+			margin-bottom: 0.3em;
+		}
+	}
+	.mainImagenPersonas {
+		img {
+			max-width: 100vw;
+		}
+	}
+	.mainNuestraIdentidad {
+		padding: 2em 1em 1em 1em;
+		h2 {
+			margin-bottom: 1em;
+			font-size: 1.3rem;
+			color: #b2a174;
+		}
+		p {
+			margin-bottom: 2em;
+		}
+	}
+	.mainImagenPajaro {
+		z-index: 9999;
+		position: relative;
+		height: 11em;
+		p {
+			padding: 2em 1em 1em 1em;
+			font-size: 1rem;
+			text-align: center;
+			font-family: "Crimson Text", serif;
+			font-weight: 600;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 11em;
+			opacity: 0.4;
+		}
+	}
+}
+
+@media screen and (min-width: 420px) {
+	.main {
+		.mainImagenPajaro {
+			height: 12em;
+			p {
+				padding: 2em 1em 1em 1em;
+				font-size: 1.1rem;
+				text-align: center;
+				font-family: "Crimson Text", serif;
+				font-weight: 600;
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 12em;
+				opacity: 0.4;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.main {
+		.mainImagenPajaro {
+			height: 18em;
+			p {
+				padding: 2em 1em 1em 1em;
+				font-size: 1.2rem;
+				text-align: center;
+				font-family: "Crimson Text", serif;
+				font-weight: 600;
+				position: relative;
+				top: 4em;
+			}
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 18em;
+				opacity: 0.4;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.main {
+		.mainSobreNosotros {
+			margin-top: 5em;
+			padding: 0 1em 1em 1em;
+			h1 {
+				font-size: 2.3rem;
+				color: #d96804;
+				margin-bottom: 0.5em;
+				font-family: "Crimson Text", serif;
+				font-weight: 600;
+			}
+			p {
+				margin-bottom: 1.5em;
+				font-size: 1.3rem;
+				width: 90%;
+			}
+		}
+		.mainNuestraIdentidad {
+			display: flex;
+			flex-direction: row;
+			padding: 2em 1em 1em 1em;
+			position: relative;
+			div {
+				width: 50%;
+				margin-left: auto;
+			}
+			h2 {
+				margin-bottom: 1em;
+				font-size: 2.2rem;
+				color: #b2a174;
+				position: absolute;
+				top: 7em;
+				left: 3em;
+			}
+			p {
+				margin-bottom: 2em;
+				font-size: 1.3rem;
+			}
+		}
+		.mainImagenPajaro {
+			height: 22em;
+			p {
+				font-size: 1.5rem;
+				padding: 2em 5em 2em 5em;
+			}
+			img {
+				height: 22em;
+			}
+		}
+	}
+}
+
+@media sceen and (min-width: 1440px) {
+}

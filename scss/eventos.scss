@@ -1,5 +1,6 @@
-.NuestrosProductos {
+.nuestrosProductos {
 	background: rgb(124, 124, 100);
+	display: none;
 	color: white;
 	padding-top: 5em;
 	padding-bottom: 1em;
@@ -75,4 +76,65 @@
 
 .ocultar {
 	display: none !important;
+}
+
+.estilosModal {
+	z-index: 99999;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: white;
+	.imagenModal {
+		border-radius: 0px !important;
+		width: 100vw;
+		height: 45vh;
+	}
+	.nombreModal {
+		margin-bottom: 0;
+		font-family: "Crimson Text", serif;
+		font-weight: 600;
+	}
+	.descripcionModal {
+		font-family: "Roboto", serif;
+		font-weight: 400;
+		position: absolute;
+		top: 55%;
+		left: 5%;
+		text-align: left;
+	}
+	.textoNaranjaModal {
+		font-family: "Roboto", serif;
+		color: rgba(217, 104, 4, 0.8);
+		position: absolute;
+		top: 70%;
+		left: 10%;
+		font-size: 0.9rem;
+		width: 80%;
+	}
+	.buttonInteresModal {
+		background: rgba(217, 104, 4, 1) !important;
+		color: white;
+		position: absolute;
+		font-size: 1.2rem !important;
+		top: 76%;
+		left: 25%;
+	}
+	.buttonInteresModal:hover {
+		background: rgba(190, 90, 2, 1) !important;
+	}
+	.buttonOcultarEstilos {
+		position: absolute;
+		top: 2%;
+		left: 90%;
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 1.3rem;
+	}
+	.buttonOcultarEstilos:hover {
+		color: rgb(95, 89, 89);
+		cursor: pointer;
+	}
 }

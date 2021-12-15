@@ -55,13 +55,21 @@ body {
     z-index: 999999;
     padding-bottom: auto; }
     body .header .navbar {
+      padding-top: 0;
+      padding-bottom: 0;
       font-family: "Roboto", sans-serif;
       z-index: 5;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
       background: black !important; }
       body .header .navbar .navbar-brand {
+        padding: 0;
         color: white;
         font-weight: 700; }
+        body .header .navbar .navbar-brand .nav-logo1 {
+          height: 50px; }
+        body .header .navbar .navbar-brand .nav-logo2 {
+          height: 70px;
+          margin-left: -14px; }
       body .header .navbar ul {
         text-align: center; }
       body .header .navbar .navbar-toggler {
@@ -327,7 +335,7 @@ body {
       z-index: 99999;
       bottom: 1%;
       right: 3%;
-      width: 15%; }
+      height: 49px; }
     body .footer .nav-footer ul {
       margin-left: -2.8em;
       list-style: none !important; }
@@ -335,6 +343,10 @@ body {
         padding-bottom: 1em; }
         body .footer .nav-footer ul li a {
           color: white; }
+      body .footer .nav-footer ul .logo-footer_pc {
+        display: none; }
+      body .footer .nav-footer ul .logo-footer {
+        margin-top: 2em; }
     body .footer .icons-footer i {
       font-size: 1.5em; }
     body .footer .icons-footer .fa-instagram {
@@ -351,10 +363,6 @@ body {
       margin-left: 12%; }
     body .footer .icons-footer .fa-envelope:hover {
       color: #e2ca5f; }
-    body .footer .logo-footer_pc {
-      display: none; }
-    body .footer .logo-footer {
-      margin-top: 2em; }
     body .footer .locacion {
       margin: 0;
       padding-top: 4%; }
@@ -372,9 +380,15 @@ body::before {
 
 @media (min-width: 1200px) {
   body .navbar-expand-xl .navbar-collapse {
-    margin-left: 30%; }
-  body nav .nav-item {
-    margin-right: 2.5rem; }
+    margin-left: 32%; }
+  body .header .navbar {
+    padding: 0; }
+    body .header .navbar .nav-item {
+      margin-right: 1.5rem; }
+    body .header .navbar .navbar-brand .nav-logo1 {
+      height: 70px; }
+    body .header .navbar .navbar-brand .nav-logo2 {
+      height: 100px; }
   body h2 {
     font-size: 55px !important; }
   body .main {
@@ -454,13 +468,11 @@ body::before {
       padding-top: 4%;
       padding-bottom: 4%; }
   body .footer .logo-footer_pc {
-    display: block;
-    font-size: 30px;
-    color: #a18f85; }
+    display: block; }
   body .footer .logo-footer {
     display: none; }
   body .footer .imagenWhatsapp {
-    width: 9%; }
+    height: 71px; }
   body .footer .nav-footer ul {
     display: flex;
     flex-direction: row;
@@ -470,3 +482,15 @@ body::before {
     font-size: 25px; }
   body .footer .locacion {
     font-size: 20px; } }
+
+@media (min-width: 1366px) {
+  body .navbar-expand-xl .navbar-collapse {
+    margin-left: 40%; } }
+
+@media (min-width: 1920px) {
+  body .navbar-expand-xl .navbar-collapse {
+    margin-left: 40%; }
+  body .header .navbar {
+    padding: 0; }
+    body .header .navbar .nav-item {
+      margin-right: 6.5rem; } }

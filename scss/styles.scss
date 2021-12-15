@@ -73,13 +73,23 @@ body {
 		padding-bottom: auto;
 
 		.navbar {
+			padding-top: 0;
+    		padding-bottom: 0;
 			font-family: "Roboto", sans-serif;
 			z-index: 5;
 			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 			background: black !important;
 			.navbar-brand {
+				padding: 0;
 				color: white;
 				font-weight: 700;
+				.nav-logo1{
+					height: 50px;
+				}
+				.nav-logo2{
+					height: 70px;
+					margin-left: -14px;
+				}
 			}
 
 			ul {
@@ -433,6 +443,12 @@ body {
 				}
 				margin-left: -2.8em;
 				list-style: none !important;
+				.logo-footer_pc{
+					display: none;
+				}
+				.logo-footer {
+					margin-top: 2em;
+				}
 			}
 		}
 		.icons-footer {
@@ -460,12 +476,7 @@ body {
 				color: #e2ca5f;
 			}
 		}
-		.logo-footer_pc{
-			display: none;
-		}
-		.logo-footer {
-			margin-top: 2em;
-		}
+		
 		.locacion {
 			margin: 0;
 			padding-top: 4%;
@@ -489,11 +500,22 @@ body::before {
 body{
 	//bootstrap Nav
 	.navbar-expand-xl .navbar-collapse {
-		margin-left: 30%;
+		margin-left: 32%;
 	}
-	nav{
-		.nav-item{
-			margin-right: 2.5rem;
+	.header{
+		.navbar{
+			padding: 0;
+			.nav-item{
+				margin-right: 1.5rem;
+			}
+			.navbar-brand{
+				.nav-logo1{
+					height: 70px;
+				}
+				.nav-logo2{
+					height: 100px;
+				}
+			}
 		}
 	}
 	h2{
@@ -620,8 +642,6 @@ body{
 			
 			.logo-footer_pc{
 				display: block;
-				font-size: 30px;
-				color: rgb(161, 143, 133);
 			}
 			.logo-footer{
 				display: none;
@@ -645,3 +665,26 @@ body{
 	}
 }
 
+@media (min-width: 1366px){
+	body{
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+	}
+}
+
+@media (min-width: 1920px){
+	body{
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+		.header{
+			.navbar{
+				padding: 0;
+				.nav-item{
+					margin-right: 6.5rem;
+				}
+			}
+		}
+	}
+}

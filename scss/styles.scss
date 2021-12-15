@@ -7,12 +7,17 @@ body {
 	//Bootstrap
 	.carousel-control-next,
 	.carousel-control-prev {
-		background: none;
+		background: none !important;
 		border: none;
 	}
 	.navbar-light .navbar-toggler-icon {
 		//cambiar stroke='rgba'
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+	}
+	.carousel-item{
+		img.carousel1024{
+			display: none !important;
+		}
 	}
 
 	.fontCrim {
@@ -374,18 +379,27 @@ body::before {
 				margin-left: -70%;
 			}
 		}
-		.carousel {
+		// .carousel {
+		// 	display: flex !important;
+		// 	flex-direction: row !important;
+		// 	overflow: visible !important;
+		// }
+		// .carousel-inner {
+		// 	display: flex;
+		// 	flex-direction: row;
+		// }
+		.carousel-item {
 			display: flex !important;
 			flex-direction: row !important;
-			overflow: visible !important;
+			img{
+				width: 50%;
+			}
+			img.carousel1024{
+				display: block !important;
+			}
 		}
-		.carousel-inner {
-			display: flex;
-			flex-direction: row;
-		}
-		.carousel-item {
-			width: 50% !important;
-		}
+
+
 		h2 {
 			font-size: 55px !important;
 		}
@@ -487,7 +501,7 @@ body::before {
 @media screen and (min-width: 1440px) {
 	body {
 		.main {
-			button:hover {
+			button:hover{
 				background: #2f2f21;
 			}
 		}

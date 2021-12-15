@@ -62,43 +62,7 @@ body {
 			}
 		}
 	}
-	.header {
-		height: 10vh;
-		width: 100vw;
-		position: fixed;
-		top: 0;
-		z-index: 999999;
-		padding-bottom: auto;
 
-		.navbar {
-			font-family: "Roboto", sans-serif;
-			z-index: 5;
-			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-			background: black !important;
-			.navbar-brand {
-				color: white;
-				font-weight: 700;
-			}
-
-			ul {
-				text-align: center;
-			}
-			.navbar-toggler {
-				border: none;
-				color: white !important;
-			}
-
-			.nav-item {
-				a {
-					color: white !important;
-					font-weight: 700;
-				}
-				a:hover {
-					color: rgb(110, 110, 110);
-				}
-			}
-		}
-	}
 	.main {
 		text-align: center;
 		margin-top: 10em;
@@ -120,6 +84,9 @@ body {
 		.btn-light {
 			padding: 0.3em 1.8em 0.3em 1.8em;
 			border-radius: 30px;
+			border: 3px solid white;
+			background: #4e4e36;
+			color: white;
 			box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 			margin-bottom: 9em;
 			font-size: 1.4rem;
@@ -280,7 +247,7 @@ body {
 					height: 100%;
 					opacity: 0.4;
 				}
-				.presentacion {
+				.presentacionHead {
 					position: relative;
 					z-index: 2;
 					padding: 8%;
@@ -306,71 +273,6 @@ body {
 			}
 		}
 	}
-	.footer {
-		font-weight: 500;
-		opacity: 2;
-		color: white;
-		height: 25em;
-		padding-top: 2em;
-		text-align: center;
-		background: linear-gradient(
-			180deg,
-			hsla(23, 61%, 30%, 1) 0%,
-			hsla(24, 22%, 51%, 1) 100%,
-			hsla(23, 61%, 30%, 1) 100%
-		);
-		position: relative;
-		.imagenWhatsapp {
-			position: fixed;
-			z-index: 99999;
-			bottom: 1%;
-			right: 3%;
-			width: 15%;
-		}
-		.nav-footer {
-			ul {
-				li {
-					padding-bottom: 1em;
-					a {
-						color: white;
-					}
-				}
-				margin-left: -2.8em;
-				list-style: none !important;
-			}
-		}
-		.icons-footer {
-			i {
-				font-size: 1.5em;
-			}
-			.fa-instagram {
-				color: white;
-			}
-			.fa-instagram:hover {
-				color: #e66465;
-			}
-			.fa-facebook-f {
-				color: white;
-				margin-left: 12%;
-			}
-			.fa-facebook-f:hover {
-				color: #1b73d5;
-			}
-			.fa-envelope {
-				color: white;
-				margin-left: 12%;
-			}
-			.fa-envelope:hover {
-				color: #e2ca5f;
-			}
-		}
-		.logo-footer {
-			margin-top: 2em;
-		}
-		.locacion {
-			margin-top: 2em;
-		}
-	}
 }
 
 body::before {
@@ -385,8 +287,105 @@ body::before {
 	opacity: 0.4;
 }
 
+@media screen and (min-width: 768px) {
+	.main {
+		text-align: center;
+		margin-top: 10em;
+		width: 100%;
+		.h1-scouts {
+			padding: 0.5em 0.2em 0.2em 0.1em;
+			font-size: 2.8rem !important;
+			font-weight: 700;
+			font-family: "Roboto", sans-serif;
+			width: 70%;
+			margin-left: 15%;
+			margin-top: 6em;
+		}
+		.h4-mates {
+			font-size: 1.6rem !important;
+			padding: 0em 0em 3em 0em;
+			margin-left: 6% !important;
+			font-weight: 600;
+			width: 90%;
+			font-family: "Crimson Text", serif;
+		}
+		.btn-light {
+			padding: 0.3em 1.8em 0.3em 1.8em;
+			border-radius: 30px;
+			border: 3px solid white;
+			background: #4e4e36;
+			color: white;
+			box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+			margin-bottom: 9em;
+			font-size: 1.4rem;
+		}
+	}
+	.conocer-mas {
+		background: #b2a174 !important;
+	}
+	.presentacionHead p {
+		font-size: 1.4rem !important;
+		line-height: 30px !important;
+	}
+	.presentacion p {
+		font-size: 1.2rem !important;
+		line-height: 25px !important;
+	}
+	.footerProductos {
+		height: 13em;
+	}
+	.footerProductos button {
+		background: white !important;
+		color: black !important;
+		font-weight: 600 !important;
+		font-size: 1.4rem !important;
+	}
+	.presentacion {
+		h2 {
+			margin-top: -5em;
+		}
+	}
+}
+
 @media (min-width: 1024px) {
 	body {
+		.main {
+			.h1-scouts {
+				font-size: 4rem !important;
+				margin-left: 5%;
+				margin-top: 0;
+				width: 60%;
+				text-align: left;
+			}
+
+			.h4-mates {
+				width: fit-content;
+				margin-left: 5% !important;
+			}
+			.btn-light {
+				padding: 0.3em 1.8em 0.3em 1.8em;
+				border-radius: 30px;
+				border: 3px solid white;
+				background: #4e4e36;
+				color: white;
+				box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+				margin-bottom: 9em;
+				font-size: 1.4rem;
+				margin-left: -70%;
+			}
+		}
+		.carousel {
+			display: flex !important;
+			flex-direction: row !important;
+			overflow: visible !important;
+		}
+		.carousel-inner {
+			display: flex;
+			flex-direction: row;
+		}
+		.carousel-item {
+			width: 50% !important;
+		}
 		h2 {
 			font-size: 55px !important;
 		}
@@ -442,6 +441,87 @@ body::before {
 		.footer {
 			.imagenWhatsapp {
 				width: 9%;
+			}
+		}
+		.sobre-nosotros {
+			background: white;
+			text-align: left;
+			h2 {
+				font-size: 2.1rem !important;
+				width: 85%;
+				padding-top: 2em;
+				margin-left: 0.7em;
+				margin-bottom: 1em !important;
+				color: #d96804;
+			}
+			p {
+				width: 88%;
+				font-size: 1.2rem !important;
+				margin-left: 1.3em !important;
+				margin-bottom: 0.5em;
+			}
+			a {
+				background: #b2a174 !important;
+				font-size: 1.2rem !important;
+			}
+			img {
+				margin-top: 5em !important;
+			}
+		}
+		.fontCrim {
+			font-size: 2.6rem !important;
+		}
+		.presentacion {
+			padding-top: 18em !important;
+			padding-bottom: 4em !important;
+		}
+		.footerProductos {
+			padding-bottom: 15em !important;
+			button {
+				margin-left: 5% !important;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		.main {
+			button:hover {
+				background: #2f2f21;
+			}
+		}
+		.conocer-mas:hover {
+			background: #807352 !important;
+		}
+		.sobre-nosotros {
+			h2 {
+				font-size: 2.5rem !important;
+			}
+			p {
+				font-size: 1.5rem !important;
+			}
+			.conocer-mas {
+				font-size: 1.5rem !important;
+			}
+		}
+		.footerProductos {
+			padding-bottom: 20em !important;
+		}
+		.presentacion {
+			padding-bottom: 6em !important;
+			p {
+				font-size: 1.6rem !important;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1580px) {
+	body {
+		.main {
+			.h4-mates {
+				margin-left: 5.5% !important;
 			}
 		}
 	}

@@ -7,16 +7,29 @@ body {
 	//Bootstrap
 	.carousel-control-next,
 	.carousel-control-prev {
-		background: none !important;
+		background: none;
 		border: none;
+	}
+	.navbar-brand {
+		.nav-logo1 {
+			height: 40px;
+		}
+		.nav-logo2 {
+			height: 50px;
+		}
 	}
 	.navbar-light .navbar-toggler-icon {
 		//cambiar stroke='rgba'
 		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 	}
-	.carousel-item{
-		img.carousel1024{
+	.carousel-item {
+		img.carousel1024 {
 			display: none !important;
+		}
+	}
+	.faq--contenido {
+		h2 {
+			margin-top: 2em !important;
 		}
 	}
 
@@ -29,6 +42,9 @@ body {
 	overflow-x: hidden;
 	button:focus {
 		outline: none;
+	}
+	.nav-link:hover {
+		color: red !important;
 	}
 	.mailOk {
 		display: none;
@@ -72,6 +88,15 @@ body {
 		text-align: center;
 		margin-top: 10em;
 		width: 100%;
+		.mainSobreNosotros {
+			text-align: left;
+			margin-top: 0em !important;
+			position: relative;
+			top: -2em;
+		}
+		.mainNuestraIdentidad {
+			text-align: left;
+		}
 		.h1-scouts {
 			padding: 0.5em 0.2em 0.2em 0.1em;
 			font-size: 2.4rem;
@@ -278,18 +303,26 @@ body {
 			}
 		}
 	}
-}
-
-body::before {
-	content: "";
-	position: fixed;
-	z-index: -9999;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: url("../assets/image\ bosque.jpg") center center;
-	opacity: 0.4;
+	.footer {
+		height: 27em;
+		.nav-footer {
+			ul {
+				li.logo-footer_pc {
+					display: none;
+				}
+				li.logo-footer {
+					margin-top: -7px;
+					padding-bottom: 0;
+					img {
+						height: 130px;
+					}
+				}
+				li.contacto_pc {
+					display: none;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -350,6 +383,10 @@ body::before {
 			margin-top: -5em;
 		}
 	}
+	.imagenWhatsapp {
+		height: 4em !important;
+		width: 4em !important;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -379,27 +416,16 @@ body::before {
 				margin-left: -70%;
 			}
 		}
-		// .carousel {
-		// 	display: flex !important;
-		// 	flex-direction: row !important;
-		// 	overflow: visible !important;
-		// }
-		// .carousel-inner {
-		// 	display: flex;
-		// 	flex-direction: row;
-		// }
 		.carousel-item {
 			display: flex !important;
 			flex-direction: row !important;
-			img{
+			img {
 				width: 50%;
 			}
-			img.carousel1024{
+			img.carousel1024 {
 				display: block !important;
 			}
-		} 
-
-
+		}
 		h2 {
 			font-size: 55px !important;
 		}
@@ -454,7 +480,55 @@ body::before {
 		}
 		.footer {
 			.imagenWhatsapp {
-				width: 9%;
+				height: 4em;
+				width: 4em;
+			}
+			.nav-footer ul {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				font-size: 20px;
+				align-items: center;
+				padding: 0;
+				margin: 0;
+				li:not(.logo-footer_pc) {
+					height: 65px;
+					padding-top: 20px;
+				}
+				li.nav-footer_sobrenosotros {
+					border-right: solid;
+					width: 110%;
+				}
+
+				li.logo-footer_pc {
+					display: block;
+					margin-top: 15px;
+					margin-bottom: 50px;
+					img {
+						height: 190px;
+					}
+				}
+				li.logo-footer {
+					display: none;
+				}
+				li.contacto_mobile {
+					display: none;
+				}
+				li.contacto_pc {
+					display: inline;
+					border-right: solid;
+					width: 80%;
+				}
+			}
+			.icons-footer {
+				font-size: 25px;
+				margin-top: -50px;
+				.fa-facebook-f,
+				.fa-envelope {
+					margin-left: 4%;
+				}
+			}
+			.locacion {
+				font-size: 20px;
 			}
 		}
 		.sobre-nosotros {
@@ -498,10 +572,48 @@ body::before {
 	}
 }
 
+@media screen and (min-width: 1200px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 31%;
+		}
+		.header {
+			.navbar {
+				padding: 0;
+				.nav-item {
+					margin-right: 1.5rem;
+				}
+				.navbar-brand {
+					.nav-logo1 {
+						height: 70px;
+					}
+					.nav-logo2 {
+						height: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1366px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+	}
+}
+
 @media screen and (min-width: 1440px) {
 	body {
 		.main {
-			button:hover{
+			.mainSobreNosotros {
+				text-align: left;
+				margin-top: 0em !important;
+				position: relative;
+				top: 1em;
+			}
+			button:hover {
 				background: #2f2f21;
 			}
 		}
@@ -536,6 +648,37 @@ body::before {
 		.main {
 			.h4-mates {
 				margin-left: 5.5% !important;
+			}
+		}
+		.headProductos {
+			height: 45em;
+			img {
+				height: 50em !important;
+			}
+		}
+		.presentacionHead {
+			top: 12em;
+		}
+		.footerProductos {
+			button {
+				position: relative;
+				left: -2em !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+		.header {
+			.navbar {
+				padding: 0;
+				.nav-item {
+					margin-right: 6.5rem;
+				}
 			}
 		}
 	}

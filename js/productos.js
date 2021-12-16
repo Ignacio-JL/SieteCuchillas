@@ -38,7 +38,7 @@ const contenidoPrincipalID = document.getElementById('contenidoPrincipalID');
 
                     <p class="textoNaranjaModal">podés personalizarlo con un motivo o escritura pirograbada a elección</p>
 
-                    <button class="buttonInteresModal">Me interesa</button>
+                    <button class="buttonInteresModal" onclick="location.href='https://api.whatsapp.com/send?phone=+5491173632433&text=Consulta%20por%20${producto.nombre}'">Me interesa</button>
 
                     <p class="buttonOcultarProducto_${producto.id} buttonOcultarEstilos">X</p>
                 </div>  

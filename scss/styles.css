@@ -5,6 +5,10 @@ body {
     text-align: left;
     margin: 0;
     padding: 0; }
+  body .navbar-brand .nav-logo1 {
+    height: 40px; }
+  body .navbar-brand .nav-logo2 {
+    height: 50px; }
   body .carousel-control-next,
   body .carousel-control-prev {
     background: none !important;
@@ -217,6 +221,17 @@ body {
         font-size: 1rem;
         margin-top: 10%;
         margin-bottom: 18%; }
+  body .footer {
+    height: 27em; }
+    body .footer .nav-footer ul li.logo-footer_pc {
+      display: none; }
+    body .footer .nav-footer ul li.logo-footer {
+      margin-top: -7px;
+      padding-bottom: 0; }
+      body .footer .nav-footer ul li.logo-footer img {
+        height: 130px; }
+    body .footer .nav-footer ul li.contacto_pc {
+      display: none; }
 
 body::before {
   content: "";
@@ -229,9 +244,132 @@ body::before {
   background: url("../assets/image bosque.jpg") center center;
   opacity: 0.4; }
 
+@media (min-width: 1024px) {
+  body .main .h1-scouts {
+    font-size: 4rem !important;
+    margin-left: 5%;
+    margin-top: 0;
+    width: 60%;
+    text-align: left; }
+  body .main .h4-mates {
+    width: fit-content;
+    margin-left: 5% !important; }
+  body .main .btn-light {
+    padding: 0.3em 1.8em 0.3em 1.8em;
+    border-radius: 30px;
+    border: 3px solid white;
+    background: #4e4e36;
+    color: white;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 9em;
+    font-size: 1.4rem;
+    margin-left: -70%; }
+  body .carousel-item {
+    display: flex !important;
+    flex-direction: row !important; }
+    body .carousel-item img {
+      width: 50%; }
+    body .carousel-item img.carousel1024 {
+      display: block !important; }
+  body h2 {
+    font-size: 55px !important; }
+  body .main .contacto .headContacto .presentacion {
+    padding: 10% 5% 10% 5%; }
+    body .main .contacto .headContacto .presentacion h2 {
+      margin-bottom: 40px; }
+    body .main .contacto .headContacto .presentacion p {
+      font-size: 25px;
+      line-height: 30px; }
+  body .main .contacto .formContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 23px; }
+    body .main .contacto .formContainer .logoContacto {
+      width: 50%;
+      display: block;
+      text-align: center; }
+      body .main .contacto .formContainer .logoContacto img {
+        padding-top: 25px;
+        height: 560px;
+        opacity: 0.5; }
+    body .main .contacto .formContainer .formulario {
+      padding-top: 80px;
+      width: 48%; }
+      body .main .contacto .formContainer .formulario div.divForm {
+        font-size: 1rem;
+        padding-left: 0; }
+  body .main .faq .faq--footer div p {
+    font-size: 25px; }
+  body .footer .imagenWhatsapp {
+    height: 71px; }
+  body .footer .nav-footer ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0; }
+    body .footer .nav-footer ul li:not(.logo-footer_pc) {
+      height: 65px;
+      padding-top: 20px; }
+    body .footer .nav-footer ul li.nav-footer_sobrenosotros {
+      border-right: solid;
+      width: 110%; }
+    body .footer .nav-footer ul li.logo-footer_pc {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 50px; }
+      body .footer .nav-footer ul li.logo-footer_pc img {
+        height: 190px; }
+    body .footer .nav-footer ul li.logo-footer {
+      display: none; }
+    body .footer .nav-footer ul li.contacto_mobile {
+      display: none; }
+    body .footer .nav-footer ul li.contacto_pc {
+      display: inline;
+      border-right: solid;
+      width: 80%; }
+  body .footer .icons-footer {
+    font-size: 25px;
+    margin-top: -50px; }
+    body .footer .icons-footer .fa-facebook-f, body .footer .icons-footer .fa-envelope {
+      margin-left: 4%; }
+  body .footer .locacion {
+    font-size: 20px; }
+  body .sobre-nosotros {
+    background: white;
+    text-align: left; }
+    body .sobre-nosotros h2 {
+      font-size: 2.1rem !important;
+      width: 85%;
+      padding-top: 2em;
+      margin-left: 0.7em;
+      margin-bottom: 1em !important;
+      color: #d96804; }
+    body .sobre-nosotros p {
+      width: 88%;
+      font-size: 1.2rem !important;
+      margin-left: 1.3em !important;
+      margin-bottom: 0.5em; }
+    body .sobre-nosotros a {
+      background: #b2a174 !important;
+      font-size: 1.2rem !important; }
+    body .sobre-nosotros img {
+      margin-top: 5em !important; }
+  body .fontCrim {
+    font-size: 2.6rem !important; }
+  body .presentacion {
+    padding-top: 18em !important;
+    padding-bottom: 4em !important; }
+  body .footerProductos {
+    padding-bottom: 15em !important; }
+    body .footerProductos button {
+      margin-left: 5% !important; } }
+
 @media (min-width: 1200px) {
   body .navbar-expand-xl .navbar-collapse {
-    margin-left: 32%; }
+    margin-left: 31%; }
   body .header .navbar {
     padding: 0; }
     body .header .navbar .nav-item {
@@ -305,136 +443,7 @@ body::before {
         body .main .contacto .formContainer .formulario button {
           font-size: 1.6rem;
           padding: 0.3em 2.5em;
-          border-radius: 40px; }
-    body .main .faq .faq--contenido p {
-      font-size: 20px; }
-    body .main .faq .faq--contenido hr {
-      width: 90.7%; }
-    body .main .faq .faq--contenido .faq--contenido__question .question--title h3 {
-      font-size: 25px; }
-    body .main .faq .faq--contenido .faq--contenido__question .question--arrow {
-      font-size: 25px; }
-    body .main .faq .faq--footer div p {
-      font-size: 28px;
-      padding-top: 4%;
-      padding-bottom: 4%; }
-  body .footer .logo-footer_pc {
-    display: block; }
-  body .footer .logo-footer {
-    display: none; }
-  body .footer .imagenWhatsapp {
-    height: 71px; }
-  body .footer .nav-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 20px; }
-  body .footer .icons-footer {
-    font-size: 25px; }
-  body .footer .locacion {
-    font-size: 20px; } }
-
-@media (min-width: 1024px) {
-  body .main .h1-scouts {
-    font-size: 4rem !important;
-    margin-left: 5%;
-    margin-top: 0;
-    width: 60%;
-    text-align: left; }
-  body .main .h4-mates {
-    width: fit-content;
-    margin-left: 5% !important; }
-  body .main .btn-light {
-    padding: 0.3em 1.8em 0.3em 1.8em;
-    border-radius: 30px;
-    border: 3px solid white;
-    background: #4e4e36;
-    color: white;
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
-    margin-bottom: 9em;
-    font-size: 1.4rem;
-    margin-left: -70%; }
-  body .carousel-item {
-    display: flex !important;
-    flex-direction: row !important; }
-    body .carousel-item img {
-      width: 50%; }
-    body .carousel-item img.carousel1024 {
-      display: block !important; }
-  body h2 {
-    font-size: 55px !important; }
-  body .main .contacto .headContacto .presentacion {
-    padding: 10% 5% 10% 5%; }
-    body .main .contacto .headContacto .presentacion h2 {
-      margin-bottom: 40px; }
-    body .main .contacto .headContacto .presentacion p {
-      font-size: 25px;
-      line-height: 30px; }
-  body .main .contacto .formContainer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    margin-top: 23px; }
-    body .main .contacto .formContainer .logoContacto {
-      width: 50%;
-      display: block;
-      text-align: center; }
-      body .main .contacto .formContainer .logoContacto img {
-        padding-top: 25px;
-        height: 560px;
-        opacity: 0.5; }
-    body .main .contacto .formContainer .formulario {
-      padding-top: 80px;
-      width: 48%; }
-      body .main .contacto .formContainer .formulario div.divForm {
-        font-size: 1rem;
-        padding-left: 0; }
-  body .main .faq .faq--footer div p {
-    font-size: 25px; }
-  body .footer .logo-footer_pc {
-    display: block; }
-  body .footer .logo-footer {
-    display: none; }
-  body .footer .imagenWhatsapp {
-    height: 71px; }
-  body .footer .nav-footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 20px; }
-  body .footer .icons-footer {
-    font-size: 25px; }
-  body .footer .locacion {
-    font-size: 20px; }
-  body .sobre-nosotros {
-    background: white;
-    text-align: left; }
-    body .sobre-nosotros h2 {
-      font-size: 2.1rem !important;
-      width: 85%;
-      padding-top: 2em;
-      margin-left: 0.7em;
-      margin-bottom: 1em !important;
-      color: #d96804; }
-    body .sobre-nosotros p {
-      width: 88%;
-      font-size: 1.2rem !important;
-      margin-left: 1.3em !important;
-      margin-bottom: 0.5em; }
-    body .sobre-nosotros a {
-      background: #b2a174 !important;
-      font-size: 1.2rem !important; }
-    body .sobre-nosotros img {
-      margin-top: 5em !important; }
-  body .fontCrim {
-    font-size: 2.6rem !important; }
-  body .presentacion {
-    padding-top: 18em !important;
-    padding-bottom: 4em !important; }
-  body .footerProductos {
-    padding-bottom: 15em !important; }
-    body .footerProductos button {
-      margin-left: 5% !important; } }
+          border-radius: 40px; } }
 
 @media (min-width: 1366px) {
   body .navbar-expand-xl .navbar-collapse {

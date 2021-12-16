@@ -17,6 +17,7 @@ const contenidoPrincipalID = document.getElementById('contenidoPrincipalID');
         contenedorProductos.innerHTML = ``
     
         stockProductos.forEach( (producto) => {
+            // <button class="buttonVerProducto_${producto.id}">Ver Producto</button>
             const div = document.createElement('div')
             div.classList.add('producto')
             div.innerHTML = `
@@ -24,25 +25,34 @@ const contenidoPrincipalID = document.getElementById('contenidoPrincipalID');
             <div class="objetoProducto">    
                 <img class="imagenMate" src="${producto.img}"" alt="">
                 <h3 class="nombreMate">${producto.nombre}</h3>
-                <button class="buttonVerProducto_${producto.id}">Ver Producto</button>
+                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal${producto.id}">Ver Producto</button>
             </div>
         
-    
-            <div class="modalProducto_${producto.id} estilosModal" style="display: none;">
-                <img class="imagenModal" src="${producto.img}"" alt="">
-                <div class="contenidoModal">
-                    <h3 class="nombreModal">${producto.nombre}</h3>
-
-                    <hr class="hr"></hr>
-                    <p class="descripcionModal">Mate de madera de algarrobo con terminación encerada brillante artesanal. </br> El modelo mide aproximadamente 9cm altura y 7cm diámetro. Viene con una bombilla de color incluida</p>
-
-                    <p class="textoNaranjaModal">podés personalizarlo con un motivo o escritura pirograbada a elección</p>
-
-                    <button class="buttonInteresModal" onclick="location.href='https://api.whatsapp.com/send?phone=+5491173632433&text=Consulta%20por%20${producto.nombre}'">Me interesa</button>
-
-                    <p class="buttonOcultarProducto_${producto.id} buttonOcultarEstilos">X</p>
-                </div>  
+            <div class="modal fade" id="exampleModal${producto.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top: 100px;">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modalProducto_${producto.id} estilosModal" style="display: block;">
+                            <img class="imagenModal" src="${producto.img}"" alt="">
+                                <div class="contenidoModal">
+                                    <h3 class="nombreModal">${producto.nombre}</h3>
+                
+                                    <hr class="hr"></hr>
+                                    <p class="descripcionModal">Mate de madera de algarrobo con terminación encerada brillante artesanal. </br> El modelo mide aproximadamente 9cm altura y 7cm diámetro. Viene con una bombilla de color incluida</p>
+                
+                                    <p class="textoNaranjaModal">podés personalizarlo con un motivo o escritura pirograbada a elección</p>
+                
+                                    <button class="buttonInteresModal" onclick="location.href='https://api.whatsapp.com/send?phone=+5491173632433&text=Consulta%20por%20${producto.nombre}'">Me interesa</button>
+                
+                                    <p class="buttonOcultarProducto_${producto.id} buttonOcultarEstilos">X</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            
                 
             ` 
             contenedorProductos.appendChild(div)

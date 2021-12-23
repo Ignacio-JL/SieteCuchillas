@@ -2,31 +2,37 @@
 	{
 		"id": 1,
 		"nombre": "Mate Calado",
-		"img": "./assets/Productos/MateHuevo.jpg"
+		"img": "./assets/Productos/MateCalado.jpg",
+		"texto": "Mate de madera de algarrobo con terminación encerada y tres líneas caladas en la parte superior. Mide aproximadamente  9 cm altura y 7 cm diámetro. Viene con una bombilla de color incluida."
 	},
 	{
 		"id": 2,
 		"nombre": "Mate Huevo",
-		"img": "./assets/Productos/MateScout.jpg"
+		"img": "./assets/Productos/MateHuevo.jpg",
+		"texto": "Mate de madera de algarrobo con terminación encerada brillante artesanal. El modelo mide aproximadamente  9 cm altura y 7 cm diámetro. Viene con una bombilla de color incluida."
 	},
 	{
 		"id": 3,
 		"nombre": "Mate Scout",
-		"img": "./assets/Productos/MateBocón.jpg"
+		"img": "./assets/Productos/MateScout.jpg",
+		"texto": "Mate de madera de caldén de terminación encerada brillante con un dije de motivo scout. Mide aproximadamente  9 cm altura y 7,5 cm diámetro. Viene con una bombilla de color incluida."
 	},
 	{
 		"id": 4,
 		"nombre": "Mate Patria",
-		"img": "./assets/Productos/MatePatria.jpg"
+		"img": "./assets/Productos/MatePatria.jpg",
+		"texto": "Mate de madera de caldén de terminación encerada brillante con un dije de motivo patrio. Mide aproximadamente  9 cm altura y 7,5 cm diámetro. Viene con una bombilla de color incluida."
 	},
 	{
 		"id": 5,
 		"nombre": "Mate Geo",
-		"img": "./assets/Productos/MateGeo.jpg"
+		"img": "./assets/Productos/MateGeo.jpg",
+		"texto": "Este modelo artesanal de algarrobo con caras planas y terminación encerada brillante  mide aproximadamente  9 cm altura y 7 cm diámetro. Viene con una bombilla de color incluida."
 	},
 	{
 		"id": 6,
 		"nombre": "Mate Bocón",
-		"img": "./assets/Productos/MateCalado.jpg"
+		"img": "./assets/Productos/MateBocon.jpg",
+		"texto": "Este modelo artesanal de madera de algarrobo con terminación encerada brillante mide aproximadamente  9 cm altura y 7 cm diámetro. Viene con una bombilla de color incluida."
 	}
 ]

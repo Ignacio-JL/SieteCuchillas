@@ -1,3 +1,27 @@
+body {
+	.footer {
+		height: 27em;
+		z-index: 99998 !important;
+		.nav-footer {
+			ul {
+				li.logo-footer_pc {
+					display: none;
+				}
+				li.logo-footer {
+					margin-top: -7px;
+					padding-bottom: 0;
+					img {
+						height: 130px;
+					}
+				}
+				li.contacto_pc {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
 .header {
 	height: 10vh;
 	width: 100vw;
@@ -11,6 +35,7 @@
 		z-index: 5;
 		box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 		background: black !important;
+
 		.navbar-brand {
 			color: white;
 			font-weight: 700;
@@ -22,16 +47,6 @@
 		.navbar-toggler {
 			border: none;
 			color: white !important;
-		}
-
-		.nav-item {
-			a {
-				color: white !important;
-				font-weight: 700;
-			}
-			a:hover {
-				color: rgb(110, 110, 110);
-			}
 		}
 	}
 }
@@ -62,7 +77,7 @@
 			li {
 				padding-bottom: 1em;
 				a {
-					color: white; 
+					color: white;
 				}
 			}
 			margin-left: -2.8em;
@@ -99,5 +114,140 @@
 	}
 	.locacion {
 		margin-top: 2em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		.footer {
+			.imagenWhatsapp {
+				height: 4em;
+				width: 4em;
+				z-index: 999999 !important;
+			}
+			.nav-footer ul {
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				font-size: 20px;
+				align-items: center;
+				padding: 0;
+				margin: 0;
+				li:not(.logo-footer_pc) {
+					height: 65px;
+					padding-top: 20px;
+				}
+				li.nav-footer_sobrenosotros {
+					border-right: solid;
+					width: 110%;
+				}
+
+				li.logo-footer_pc {
+					display: block;
+					margin-top: 15px;
+					margin-bottom: 50px;
+					img {
+						height: 190px;
+					}
+				}
+				li.logo-footer {
+					display: none;
+				}
+				li.contacto_mobile {
+					display: none;
+				}
+				li.contacto_pc {
+					display: inline;
+					border-right: solid;
+					width: 80%;
+				}
+			}
+			.icons-footer {
+				font-size: 25px;
+				margin-top: -50px;
+				.fa-facebook-f,
+				.fa-envelope {
+					margin-left: 4%;
+				}
+			}
+			.locacion {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 31%;
+		}
+		ul {
+			li.nav-item {
+				a:hover {
+					color: #4b4b4b !important;
+					position: relative;
+					bottom: 10px;
+				}
+			}
+		}
+		.header {
+			.navbar {
+				padding: 0;
+				.nav-item {
+					margin-right: 1.5rem;
+				}
+				.navbar-brand {
+					.nav-logo1 {
+						height: 70px;
+					}
+					.nav-logo2 {
+						height: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1366px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+	}
+}
+
+@media screen and (min-width: 1580px) {
+	body {
+		.main {
+			.h4-mates {
+				margin-left: 5.5% !important;
+			}
+		}
+		.headProductos {
+			height: 45em;
+			img {
+				height: 50em !important;
+			}
+		}
+		.presentacionHead {
+			top: 12em;
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	body {
+		.navbar-expand-xl .navbar-collapse {
+			margin-left: 40%;
+		}
+		.header {
+			.navbar {
+				padding: 0;
+				.nav-item {
+					margin-right: 6.5rem;
+				}
+			}
+		}
 	}
 }

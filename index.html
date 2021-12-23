@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./scss/styles.css">
-    <link rel="stylesheet" href="./scss/eventos.css">
-    <link rel="stylesheet" href="./scss/headerFooter.css">
-    <meta name="description" content="Siete Cuchillas, Hecho por Scouts y para Scouts. Mates y artesanías personalizadas.">
-    <meta name="keywords" content="Scouts, Mates, Cultura, Naturaleza">
-    <link rel="icon" href="./assets/logo.ico">
+    <meta name="description" content="Siete Cuchillas, Hecho por Scouts y para Scouts. Mates y artesanías personalizadas. Nuestro producto favorito son los mates porque nos encanta la idea de compartir tardes y mañanas, momentos, anécdotas y experiencias con amigos y familia." />
+    <meta name="keywords" content="Scouts, Mates, Cultura, Naturaleza" />
     <title>Siete Cuchillas</title>
-
+    <link rel="icon" href="./assets/logo.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Kumbh+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="./scss/headerFooter.css">
+    <link rel="stylesheet" href="./scss/bodyBefore.css">
+
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '632120487940202');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=632120487940202&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
 
     <script src="https://kit.fontawesome.com/2c1ce8387b.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -32,46 +50,45 @@
       </div>
     </div>
   </div>
-    <div class="header">
-      <nav class="navbar navbar-expand-xl navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img class="nav-logo1" src="./assets/logo1.png" alt="logo"/><img class="nav-logo2" src="./assets/logo2.png" alt="logo"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
-              <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#" id="navProductosClick">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item">
-                  <a id="itemContacto" class="nav-link active" aria-current="page" href="./index.html#contacto">Contacto</a>
-                </li>
-
-              </ul>
-            </div>
+  <div class="header">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="nav-logo1" src="./assets/logo1.png" alt="logo"/><img class="nav-logo2" src="./assets/logo2.png" alt="logo"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./productos.html" id="navProductosClick">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a id="itemContacto" class="nav-link active" aria-current="page" href="./index.html#contacto">Contacto</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-    </div>
+        </div>
+      </nav>
+  </div>
 
 <div class="contenidoPrincipal" id="contenidoPrincipalID">
   <div class="main">
       <p class="h1 h1-scouts">Hecho por scouts, para scouts</p>
       <p class="h4 h4-mates">Mates y artesanías personalizadas</p>
-      <button type="button" class="btn btn-light" id="btnProductosMain">Ver productos</button>
+      <button type="button" class="btn btn-light" id="btnProductosMain"> <a href="./productos.html" class="verProductosLink">Ver productos</a></button>
 
     <div class="sobre-nosotros">
         <h2 class="sobre-nosotros-titulo">Somos Siete Cuchillas</h2>
         <p>Siete Cuchillas es un emprendimiento que recién está comenzando, hecho por scouts para scouts.</p>
         <p>Vas a encontrar personas que entiendan y compartan tu pasión por el escultismo. Es por eso que vas a encontrar productos que reflejen tu espíritu. </p>
         <p class="nuestro-producto">Nuestro producto favorito son los <strong>mates</strong> porque nos encanta la idea de compartir tardes y mañanas, momentos, anécdotas y experiencias con amigos y familia.</p>   
-        <a class="conocer-mas" href="">Conocer más</a> 
+        <a class="conocer-mas" href="./sobreNosotros.html">Conocer más</a> 
         <img class="mate-ruta" src="./assets/mateRuta.jpg" alt="">   
     </div>
 
@@ -82,7 +99,7 @@
 
       
         <div class="headProductos">
-          <img src="./assets/mesa-bosque.png">
+          <img src="./assets/bancoBosque.jpg">
             <div class="presentacionHead">
                 <p>Nos especializamos en la confección de mates, azucareras, bombillas y demás artículos relacionados con el arte del mate.</p>
                 <p>También ofrecemos la posibilidad de un producto único e irrepetible, agregando dijes, colores y demás elementos personalizados.</p>
@@ -116,12 +133,13 @@
       
       
       <div class="footerProductos">
-        <button type="button" class="btn btn-light" >Ver productos</button>
+        <button type="button" class="btn btn-light" ><a href="./productos.html" class="verProductosLink">Ver productos</a> </button>
       </div>
 
     </div>
-
-    <div id="contacto" class="contacto">
+    <!-- scroll contacto -->
+    <div id="contacto" style="height: 55px;background: transparent;margin-top: -55px;"></div>
+    <div class="contacto">
       <div class="headContacto">
         <img src="./assets/arbolContacto.jpg">
           <div class="presentacion">
@@ -131,33 +149,38 @@
           </div>
           
       </div>
-      <div class="formContainer reset">
+      <div class="formContainer reset" name="contactoForm">
         <div class="logoContacto">
           <img src="./assets/contactoFondo.png" alt="logoSieteCuchillas">
         </div>
-          <form action="https://formspree.io/f/mqknkpzv" method="POST" class="formulario needs-validation" novalidate>
-              <div class="divForm">
-                  <input type="text" class="form-control" name="Nombre" id="nombre" placeholder="Nombre y apellido" required>
-                  
-                  <div class="invalid-feedback">Completar</div>
-              </div>
-              <div class="divForm">
-                  <input type="email" class="form-control" name="Correo" id="correo" placeholder="Email" required>
-                  <div id="checkCorreo" class="invalid-feedback">Completar</div>
-              </div>
-              <div class="divForm">
-                  <input type="tel" class="form-control" name="Telefono" id="telefono" placeholder="Teléfono" required>
-                  
-                  <div class="invalid-feedback">Completar</div>
-              </div>
-              <div class="divForm">
-                  <textarea class="form-control" name="Mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
-                  
-                  <div class="invalid-feedback">Completar</div>
-              </div>
-              <div class="divForm formulario-button">
-                  <button id="enviarForm">Enviar</button>
-              </div>
+        <form class="formulario needs-validation" novalidate>
+          <div class="divForm">
+              <input type="text" class="form-control" name="Nombre" id="nombre" placeholder="Nombre y apellido" required>
+              
+              <div class="invalid-feedback">Completar</div>
+          </div>
+          <div class="divForm">
+              <input type="email" class="form-control" name="Correo" id="correo" placeholder="Email" required>
+              <div id="checkCorreo" class="invalid-feedback">Completar</div>
+          </div>
+          <div class="divForm">
+              <input type="tel" class="form-control" name="Telefono" id="telefono" placeholder="Teléfono" required>
+              
+              <div class="invalid-feedback">Completar</div>
+          </div>
+          <div class="divForm">
+              <textarea class="form-control" name="Mensaje" id="mensaje" placeholder="Dejanos acá tu consulta" required></textarea>
+              
+              <div class="invalid-feedback">Completar</div>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Contacto SieteCuhillas">
+          <div class="divForm formulario-button"> 
+              <button id="enviarForm">Enviar</button>
+          </div>
+          
+          
+      </form>
               
               
           </form>
@@ -167,43 +190,50 @@
 
   </div>
 </div>
+
+
 <!--Acá termina el main, lo puse así para ocultar el contenido al hacer click en la sección de productos-->
 
-  <div class="footer">
-    <img src="./assets/Whatsapp-Logo-PNG.png" class="img-fluid imagenWhatsapp" alt="img-fluid">
 
+
+  <div class="footer">
+    <a href="https://api.whatsapp.com/send?phone=+5491173632433"><img src="./assets/Whatsapp-Logo-PNG.png" class="img-fluid imagenWhatsapp" alt="img-fluid">
+    </a>
+    
+   
     <div class="col-sm-12">
       <div class="nav-footer">
         <ul>
           <li class="nav-footer_sobrenosotros">
-            <a href="">Sobre nosotros</a>
+            <a href="./sobreNosotros.html">Sobre nosotros</a>
           </li>
           <li class="nav-footer_productos">
-            <a href="#" id="footerProductosClick">Productos</a>
+            <a href="./productos.html" id="footerProductosClick">Productos</a>
           </li>
           <li class="logo-footer_pc">
             <img src="./assets/logoFooter.png" alt="logo footer">
           </li>
           <li class="contacto_pc">
-            <a href="">Contacto</a>
+            <a href="./index.html#contacto">Contacto</a>
           </li>
           <li>
-            <a href="">Preguntas Frecuentes</a>
+            <a href="./preguntasFrecuentes.html">Preguntas Frecuentes</a>
           </li>
           <li class="contacto_mobile">
-            <a href="">Contacto</a>
+            <a href="./index.html#contacto">Contacto</a>
           </li>
           <li class="logo-footer">
             <img src="./assets/logoFooter.png" alt="logo footer">
           </li>
         </ul>
       </div>
-      
+
       <div class="icons-footer">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="far fa-envelope"></i>
-      </div>
+        <a href="https://www.instagram.com/sietecuchillas/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/sietecuchillas.ar" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="./index.html#contacto"><i class="far fa-envelope"></i></a>
+        
+      </div>      
       <p class="locacion">Buenos Aires, Argentina</p>
     </div>
   </div>

@@ -42,18 +42,25 @@ body {
 	.modalProductos {
 		width: 100%;
 		height: 100%;
-		z-index: 999999;
+		z-index: 99998;
 	}
 
 	.productos {
 		padding-top: 2em;
-		padding-bottom: 2em;
+		padding-bottom: 5em;
+		margin-bottom: -2em;
 		background: rgb(226, 217, 193);
 		color: black;
 		text-align: center;
 		opacity: 1;
 		z-index: 99999;
+		top: -1.5em;
 		position: relative;
+		.objetoProducto {
+			button:hover {
+				background: rgb(226, 223, 223);
+			}
+		}
 		img {
 			width: 150px;
 			height: 150px;
@@ -87,12 +94,6 @@ body {
 			}
 		}
 	}
-	.productos div:first-child {
-		margin-top: 0;
-		.productos div:first-child {
-			margin-top: 0;
-		}
-	}
 
 	.mostrarProductos {
 		display: flex !important;
@@ -109,7 +110,7 @@ body {
 		height: 100vh;
 		width: 100vw;
 		position: absolute;
-		top: 0;
+		top: -5px;
 		bottom: 0;
 		left: 0;
 		background: white;
@@ -119,7 +120,10 @@ body {
 			height: 45vh;
 		}
 		.nombreModal {
-			margin-bottom: 0;
+			position: absolute;
+			top: 51.5%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			font-family: "Crimson Text", serif;
 			font-weight: 600;
 		}
@@ -127,26 +131,29 @@ body {
 			font-family: "Roboto", serif;
 			font-weight: 400;
 			position: absolute;
-			top: 55%;
-			left: 5%;
+			top: 57%;
+			left: 13%;
+			max-width: 80%;
 			text-align: left;
 		}
 		.textoNaranjaModal {
 			font-family: "Roboto", serif;
 			color: rgba(217, 104, 4, 0.8);
-			position: absolute;
-			top: 70%;
-			left: 10%;
 			font-size: 0.9rem;
-			width: 80%;
+			width: 65%;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 		.buttonInteresModal {
 			background: rgba(217, 104, 4, 1) !important;
 			color: white;
-			position: absolute;
 			font-size: 1.2rem !important;
-			top: 76%;
-			left: 25%;
+			position: absolute;
+			top: 88%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 		.buttonInteresModal:hover {
 			background: rgba(190, 90, 2, 1) !important;
@@ -185,7 +192,15 @@ body {
 				color: white;
 				font-weight: 700;
 			}
-
+			ul {
+				li.nav-item {
+					a:hover {
+						color: #4b4b4b !important;
+						position: relative;
+						bottom: 10px;
+					}
+				}
+			}
 			ul {
 				text-align: center;
 			}
@@ -272,34 +287,92 @@ body {
 	}
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 420px) {
 	body {
-		.productos {
-			img {
-				width: 200px;
-				height: 200px;
+		.imagenMate {
+			width: 17em !important;
+			height: 17em !important;
+		}
+	}
+}
+
+@media screen and (min-width: 500px) {
+	body {
+		.estilosModal {
+			.imagenModal {
+				width: 100vw;
+				height: 45vh;
+				padding: 0 15% 0 15%;
+			}
+			.nombreModal {
+				top: 51.5%;
+				left: 50%;
+				font-weight: 600;
+				font-size: 2rem;
+			}
+			.descripcionModal {
+				font-family: "Roboto", serif;
+				font-weight: 400;
+				text-align: left;
+				font-size: 1.2rem;
+			}
+			.textoNaranjaModal {
+				font-size: 1.1rem;
+				width: 65%;
+				top: 80%;
+				left: 50%;
+			}
+			.buttonInteresModal {
+				font-size: 1.2rem !important;
+				top: 88%;
+				left: 50%;
 			}
 		}
 	}
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 700px) {
 	body {
+		.imagenMate {
+			width: 12em !important;
+			height: 12em !important;
+		}
 		.productos {
-			img {
-				width: 250px;
-				height: 250px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			.producto {
+				width: 37%;
 			}
 		}
-	}
-}
-
-@media screen and (min-width: 768px) {
-	body {
-		.productos {
-			img {
-				width: 400px;
-				height: 400px;
+		.estilosModal {
+			.imagenModal {
+				width: 100vw;
+				height: 45vh;
+				padding: 0 20% 0 20%;
+			}
+			.nombreModal {
+				top: 51.5%;
+				left: 50%;
+				font-weight: 600;
+				font-size: 2rem;
+			}
+			.descripcionModal {
+				font-family: "Roboto", serif;
+				font-weight: 400;
+				text-align: left;
+				font-size: 1.4rem;
+			}
+			.textoNaranjaModal {
+				font-size: 1.3rem;
+				width: 65%;
+				top: 80%;
+				left: 50%;
+			}
+			.buttonInteresModal {
+				font-size: 1.2rem !important;
+				top: 88%;
+				left: 50%;
 			}
 		}
 	}
@@ -308,9 +381,11 @@ body {
 @media screen and (min-width: 1024px) {
 	body {
 		.nuestrosProductos {
+			margin-top: 3em;
+			margin-bottom: 3em;
 			color: black;
 			padding-top: 5em;
-			padding-bottom: 1em;
+			padding-bottom: 0em;
 			font-family: "Crimson Text", serif;
 			z-index: 1;
 			img {
@@ -318,7 +393,7 @@ body {
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 50%;
+				height: 97.3%;
 				opacity: 0.4;
 			}
 			div {
@@ -348,8 +423,10 @@ body {
 			flex-wrap: wrap;
 			flex-direction: row;
 			overflow-x: hidden;
-			padding-bottom: 5em;
+			padding-bottom: 10em;
 			padding-left: 10%;
+			position: relative;
+			top: 1em;
 			.producto {
 				width: 25%;
 				padding-top: 0.5em;
@@ -364,22 +441,28 @@ body {
 			}
 		}
 		.estilosModal {
-			// display: none;
-			position: fixed;
-			max-width: 93%;
-			top: 100px;
-			margin-left: 2em;
+			display: none;
+			position: absolute;
+			top: 37%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 58em;
 			border-radius: 10px;
 			max-height: 37em;
+			.imagenModal {
+				width: 100vw;
+				height: 45vh;
+				padding: 0 0 0 0;
+			}
 			.contenidoModal {
-				width: 90%;
+				width: 100%;
 				display: flex;
 				flex-direction: column;
 				position: relative;
-
 				.hr {
 					display: flex;
 					position: absolute;
+					margin-top: 0 !important;
 					top: 100px;
 					width: 92%;
 					margin-left: 1.5em;
@@ -388,7 +471,7 @@ body {
 				}
 				.nombreModal {
 					position: absolute;
-					left: 170px;
+					left: 230px !important;
 					top: 55px;
 					overflow: hidden;
 					font-size: 2.5rem;
@@ -401,20 +484,22 @@ body {
 				}
 				.textoNaranjaModal {
 					position: absolute;
-					top: 350px;
+					top: 400px;
+					left: 230px !important;
+					width: 80% !important;
 					font-size: 1.2rem;
 				}
 				.buttonInteresModal {
 					position: absolute;
-					top: 430px;
-					left: 180px;
+					top: 465px;
+					left: 230px !important;
 				}
 			}
 			.imagenModal {
 				border-radius: 15px !important;
-				max-width: 44%;
+				max-width: 47%;
 				height: 80%;
-				margin-left: 1em;
+				margin-left: 2em;
 				margin-top: 3.5em;
 				margin-right: 0 !important;
 			}
@@ -424,61 +509,9 @@ body {
 
 @media screen and (min-width: 1440px) {
 	body {
-		.nuestrosProductos {
-			color: black;
-			padding-top: 5em;
-			padding-bottom: 1em;
-			font-family: "Crimson Text", serif;
-			z-index: 1;
-			img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 50%;
-				opacity: 0.4;
-			}
-			div {
-				position: relative;
-				z-index: 2;
-			}
-			h1 {
-				width: 80%;
-				font-size: 3rem;
-				font-weight: 700;
-				margin-left: 5%;
-				margin-bottom: 0.7em;
-			}
-			p {
-				margin-left: 5%;
-				font-weight: 500;
-				width: 89%;
-				font-size: 1.4rem;
-				font-family: "Roboto", sans-serif;
-			}
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: row;
-			overflow-x: hidden;
-			padding-bottom: 5em;
-			padding-left: 2%;
-			.producto {
-				width: 30%;
-				padding-top: 0.5em;
-				margin-left: 2em;
-				.imagenMate {
-					width: 75%;
-					height: 20em;
-				}
-				button {
-					margin-bottom: 2em;
-				}
-			}
-			.nombreMate {
-				font-size: 2rem;
-			}
+		.imagenMate {
+			width: 17em !important;
+			height: 17em !important;
 		}
 	}
 }
